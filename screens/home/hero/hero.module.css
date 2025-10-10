@@ -1,0 +1,9 @@
+.section {
+  padding-top: 0;
+  overflow-x: hidden;
+}
+
+.slides {
+  display: flex;
+  gap: 24px;
+}
