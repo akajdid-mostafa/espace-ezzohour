@@ -5,10 +5,11 @@ import cn from "classnames";
 import styles from "./header.module.css";
 import icons from "@/constants/icons";
 import Link from "next/link";
+import Image from "next/image";
 import Banner from "./banner";
-import ShopMenu from "./shop-menu";
-import CollectionsMenu from "./collections-menu";
-import ExploreMenu from "./explore-menu";
+// import ShopMenu from "./shop-menu";
+// import CollectionsMenu from "./collections-menu";
+// import ExploreMenu from "./explore-menu";
 import mock from "@/constants/mock";
 import Socials from "../socials/socials";
 import Modal from "../modal";
@@ -29,7 +30,7 @@ export default function Header({ header_links = mock.header_links }) {
       setCartModalVisible(true);
       resetIsAdded();
     }
-  }, [isAdded]);
+  }, [isAdded, resetIsAdded]);
 
   React.useEffect(() => {
     window.addEventListener("scroll", handleHeader);
@@ -65,30 +66,30 @@ export default function Header({ header_links = mock.header_links }) {
     }
   };
 
-  const renderMenu = (type) => {
-    switch (type) {
-      case "shop-menu":
-        return (
-          <ShopMenu className={styles.menu} onMouseLeave={handleMouseLeave} />
-        );
-      case "collections-menu":
-        return (
-          <CollectionsMenu
-            className={styles.menu}
-            onMouseLeave={handleMouseLeave}
-          />
-        );
-      case "explore-menu":
-        return (
-          <ExploreMenu
-            className={styles.menu}
-            onMouseLeave={handleMouseLeave}
-          />
-        );
-      default:
-        return null;
-    }
-  };
+  // const renderMenu = (type) => {
+  //   switch (type) {
+  //     case "shop-menu":
+  //       // return (
+  //       //   <ShopMenu className={styles.menu} onMouseLeave={handleMouseLeave} />
+  //       // );
+  //     case "collections-menu":
+  //       // return (
+  //       //   <CollectionsMenu
+  //       //     className={styles.menu}
+  //       //     onMouseLeave={handleMouseLeave}
+  //       //   />
+  //       // );
+  //     case "explore-menu":
+  //       // return (
+  //       //   <ExploreMenu
+  //       //     className={styles.menu}
+  //       //     onMouseLeave={handleMouseLeave}
+  //       //   />
+  //       // );
+  //     default:
+  //       return null;
+  //   }
+  // };
 
   const handleMouseEnter = (type) => {
     if (window.innerWidth <= 768) {
@@ -130,7 +131,13 @@ export default function Header({ header_links = mock.header_links }) {
       >
         <div className={cn("container", styles.container)}>
           <Link href="/" className={styles.logo}>
-            {icons.Leaves}
+            <Image 
+              src="/images/logo/logo.svg" 
+              alt="Ezzohour Logo" 
+              width={170} 
+              height={100}
+              priority
+            />
           </Link>
 
           <nav
@@ -153,7 +160,7 @@ export default function Header({ header_links = mock.header_links }) {
                     {link.label}
                   </Link>
 
-                  {activeMenu === link.type && renderMenu(link.type)}
+                  {/* {activeMenu === link.type && renderMenu(link.type)} */}
                 </li>
               ))}
             </ul>
@@ -170,16 +177,14 @@ export default function Header({ header_links = mock.header_links }) {
           </nav>
 
           <div className={styles.btns}>
-            <button
+            {/* <button
               className={styles.search}
               onClick={() => setSearchModalVisible(true)}
             >
               {icons.Search}
-            </button>
-            <Link href="/login" className={styles.user}>
-              {icons.User}
-            </Link>
-            <button
+            </button> */}
+           
+            {/* <button
               className={styles.cart}
               onClick={() => setCartModalVisible(true)}
             >
@@ -189,16 +194,19 @@ export default function Header({ header_links = mock.header_links }) {
                   {totalItems}
                 </span>
               )}
-            </button>
+            </button> */}
 
-            <div className={styles.menu_button}>
+            {/* <div className={styles.menu_button}>
               <button
                 className={cn(styles.burger, {
                   [styles.active]: visibleNav,
                 })}
                 onClick={() => setVisibleNav(!visibleNav)}
               ></button>
-            </div>
+            </div> */}
+            <button className={styles.contact_button}>
+              Contact Us
+            </button>
           </div>
         </div>
       </header>

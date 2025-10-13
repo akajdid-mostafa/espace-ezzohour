@@ -12,21 +12,22 @@ export default function Intro() {
           <img
             className={styles.image}
             src="/images/stations.webp"
-            alt="Inspired by nature"
+            alt="Écosystème commercial connecté"
           />
         </div>
         <div className={styles.heading}>
           <div className={cn("heading-3", styles.title)}>
-            Inspired by nature
+            Connecté par la technologie
           </div>
           <div className={cn("paragraph-medium", styles.description)}>
-            Discover our story of passion and innovation as we embarked on a
-            mission to integrate sustainable practices into every facet of our
-            operations.
+            Découvrez notre vision révolutionnaire : un écosystème commercial où 
+            station-service, restaurant, supérette et garage fonctionnent comme un 
+            seul organisme grâce à notre système ERP centralisé. Chaque service 
+            enrichit l'expérience globale et votre programme de fidélité unifié.
           </div>
 
           <button className={cn("button", styles.button)}>
-            Our History {icons.ArrowRight}{" "}
+            Notre Histoire {icons.ArrowRight}{" "}
           </button>
         </div>
       </div>

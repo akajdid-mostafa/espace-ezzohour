@@ -7,20 +7,24 @@ export default function About() {
   return (
     <div className={cn("section")}>
       <div className={cn("container", styles.container)}>
-        <div className={cn("label-medium")}>About us</div>
+        <div className={cn("label-medium")}>Espace Ezzohour</div>
 
         <div className={styles.wrapper}>
           <div>
             <div className={cn("paragraph-medium", styles.description)}>
-              Dive into a world where every device connects you not just to the
-              digital realm but to a brighter, sustainable future. This is
-              technology that doesn&apos;t just perform — it inspires a new way of
-              living, where sustainability and sophistication go hand in hand.
+              Espace Ezzohour est votre complexe multiservices moderne situé à
+              Tanger, conçu pour simplifier votre quotidien. Ici, chaque détail
+              compte. Que ce soit pour faire le plein, prendre un café,
+              entretenir votre voiture ou partager un moment en famille, Espace
+              Ezzohour vous accompagne à chaque instant. Carburant,
+              restauration, supérette, espace enfants… tout est réuni pour
+              rendre vos passages plus simples, plus agréables, et toujours
+              utiles.
             </div>
           </div>
 
           <button className={cn("button-stroke", styles.button)}>
-            Our story {icons.ArrowRight}
+          Explorez Ezzohour {icons.ArrowRight}
           </button>
         </div>
       </div>

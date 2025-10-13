@@ -28,7 +28,7 @@ export default function Slide({
       exit="exit"
       drag="x"
       dragConstraints={{ left: 0, right: 0 }}
-      dragElastic={0.7}
+      dragElastic={0.9}
       onDragEnd={onDragEnd}
     >
       <div

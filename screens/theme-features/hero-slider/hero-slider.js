@@ -2,6 +2,7 @@ import React from "react";
 import cn from "classnames";
 import styles from "./hero-slider.module.css";
 import icons from "@/constants/icons";
+import Image from "next/image";
 
 export default function HeroSlider() {
   return (
@@ -17,10 +18,12 @@ export default function HeroSlider() {
             </div>
           </div>
 
-          <img
+          <Image
             src="/theme-features/hero-slide.webp"
-            alt="Responsive design"
+            alt="Hero slider"
             className={styles.image}
+            width={600}
+            height={400}
           />
         </div>
       </div>

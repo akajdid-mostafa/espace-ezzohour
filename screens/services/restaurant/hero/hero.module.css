@@ -1,0 +1,57 @@
+.section {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/images/modern-speaker.webp') center/cover;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.content {
+  max-width: 600px;
+  color: white;
+  text-align: left;
+}
+
+.subtitle {
+  color: #00d4aa;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.description {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .section {
+    min-height: 50vh;
+  }
+  
+  .content {
+    text-align: center;
+  }
+}

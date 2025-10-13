@@ -1863,7 +1863,43 @@ const Filter = (
   </svg>
 );
 
-export default {
+const StationCarburant = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="40"
+    height="40"
+    zoomAndPan="magnify"
+    viewBox="0 0 30 30.000001"
+    preserveAspectRatio="xMidYMid meet"
+    version="1.0"
+  >
+    <defs>
+      <clipPath id="38a08a17e8">
+        <path
+          d="M 0.484375 0 L 29.515625 0 L 29.515625 29.03125 L 0.484375 29.03125 Z M 0.484375 0 "
+          clipRule="nonzero"
+        />
+      </clipPath>
+    </defs>
+
+    <g clipPath="url(#38a08a17e8)">
+      <g transform="matrix(0.231517, 0, 0, 0.231517, -57.819399, -57.587005)">
+        <image
+          x="0"
+          y="0"
+          width="627"
+          height="627"
+          xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnMAAAJzCAIAAADr0gJZ..."
+          preserveAspectRatio="xMidYMid meet"
+        />
+      </g>
+    </g>
+  </svg>
+);
+
+
+
+const icons = {
   ArrowRight,
   ArrowLeft,
   Leaves,
@@ -1928,4 +1964,8 @@ export default {
   Cirrus,
   UnionPay,
   Filter,
+  StationCarburant,
+  // logo,
 };
+
+export default icons;

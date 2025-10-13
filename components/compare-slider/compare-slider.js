@@ -49,13 +49,13 @@ export default function CompareSlider() {
       //   onMouseMove={handleMouseMove}
       onMouseLeave={() => setPosition(50)}
       style={{
-        backgroundImage: `url(/images/white-portable.webp)`,
+        backgroundImage: `url(/images/compare/1.jpg)`,
       }}
     >
       <div
         style={{
           clipPath: `polygon(0 0, ${position}% 0, ${position}% 100%, 0 100%)`,
-          backgroundImage: `url(/images/orange-portable.webp)`,
+          backgroundImage: `url(/images/compare/2.jpg)`,
         }}
         className={styles.image}
       >

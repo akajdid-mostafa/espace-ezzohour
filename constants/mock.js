@@ -1,11 +1,14 @@
 import icons from "./icons";
 
 const header_links = [
-  { href: "/shop/all-products", label: "Shop", type: "shop-menu" },
-  { href: "/collections", label: "Collections", type: "collections-menu" },
-  { href: "/about", label: "Explore", type: "explore-menu" },
-  { href: "/contact-us", label: "Contact", type: "link" },
-  { href: "/theme-features", label: "Theme features", type: "link" },
+  // { href: "/shop/all-products", label: "Ezzohour", type: "shop-menu" },
+  { href: "/collections", label: "Carburant", type: "collections-menu" },
+  { href: "/about", label: "Restaurant", type: "explore-menu" },
+  { href: "/contact-us", label: "Superette", type: "link" },
+  { href: "/theme-features", label: "Lavage", type: "link" },
+  { href: "/theme-features", label: "Garage", type: "link" },
+  { href: "/theme-features", label: "Jeux", type: "link" },
+  { href: "/theme-features", label: "Parking", type: "link" },
 ];
 
 const links = [
@@ -825,32 +828,38 @@ const avatars = [
 const faqs = [
   {
     id: 1,
-    question: "What materials are Eco Tunes headphones made from?",
+    question: "Qu’est-ce qu’Espace Ezzohour ?",
     answer:
-      "Eco Tunes headphones are crafted from sustainable materials such as recycled plastics, bamboo, and biodegradable fabrics to minimize environmental impact.",
+      "Espace Ezzohour est un complexe multiservices moderne situé à Tanger. Il regroupe en un seul lieu des services essentiels comme le carburant, la restauration, l’entretien auto, une supérette, et un espace enfants.",
   },
   {
     id: 2,
-    question: "How long does the battery last on Eco Tunes headphones?",
-    answer: "Eco Tunes headphones have a battery life of up to 20 hours.",
+    question: "À qui s’adresse le complexe ?",
+    answer: "À tous. Que vous soyez en déplacement, en pause, en famille ou du quartier, Espace Ezzohour est conçu pour s’adapter à vos rythmes et à vos besoins.",
   },
   {
     id: 3,
-    question: "Are Eco Tunes headphones water-resistant?",
+    question: "Quels services sont disponibles sur place ?",
     answer:
-      "Eco Tunes headphones are water-resistant and can withstand light rain and sweat.",
+      "Vous trouverez une station-service, un espace de restauration, un service de lavage auto, une supérette, et une zone dédiée aux enfants. Chaque service est pensé pour être fluide, accessible et agréable.",
   },
   {
     id: 4,
-    question: "Can I make calls with Eco Tunes headphones?",
+    question: "Les services sont-ils ouverts tous les jours ?",
     answer:
-      "Eco Tunes headphones have a built-in microphone that allows you to make calls hands-free.",
+      "Oui, la majorité des services sont accessibles 7j/7. Les horaires peuvent varier selon les espaces—consultez les pages dédiées pour plus de détails.",
   },
   {
     id: 5,
-    question: "What is the warranty period for Eco Tunes headphones?",
+    question: "Puis-je venir avec mes enfants ?",
     answer:
-      "Eco Tunes headphones come with a one-year warranty that covers manufacturing defects.",
+      "Bien sûr. Un espace sécurisé et ludique est prévu pour les plus jeunes, afin que chacun puisse profiter pleinement de sa visite.",
+  },
+  {
+    id: 6,
+    question: "Y a-t-il un parking sur place ?",
+    answer:
+      "Oui, un parking est disponible et entièrement gratuit. Vous pouvez vous y garer facilement, que ce soit pour une courte pause ou un moment plus long.",
   },
 ];
 
@@ -1088,33 +1097,65 @@ const slides = [
   {
     id: 0,
     image: "/images/sliders/slider-1.webp",
-    title: "Eco Tunes",
-    subtitle: "Hear the future, save the planet.",
-    button: "Shop headphones",
+    title: "Espace Ezzohour",
+    subtitle: "Votre destination quotidienne à Tanger : tous vos services, réunis en un seul lieu",
+    button: "Découvrir l'Espace",
     slug: "/headphones",
   },
   {
     id: 1,
     image: "/images/sliders/slider-2.webp",
-    title: "Verde Sound",
-    subtitle: "Tune into eco, play the sound of life.",
-    button: "Shop speakers",
+    title: "Station Carburant",
+    subtitle: "Faites le plein avec Afriquia, 7j/7. Qualité, rapidité, fiabilité.",
+    button: "Accéder à la Station",
     slug: "/speakers",
   },
   {
     id: 2,
     image: "/images/sliders/slider-3.webp",
-    title: "Volt Base",
-    subtitle: "Harness clean power, charge into the green future.",
-    button: "Shop stations",
+    title: "Restauration & Pause",
+    subtitle: "Pour vos repas et pauses gourmandes, à tout moment de la journée.",
+    button: "Découvrir le Restaurant",
     slug: "/charging-stations",
   },
   {
     id: 3,
     image: "/images/sliders/slider-4.webp",
-    title: "Lumi Torch",
-    subtitle: "Light up life, the eco-way.",
-    button: "Shop flashlights",
+    title: "Produits du Quotidien",
+    subtitle: "Snacks, essentiels et produits frais à portée de main.",
+    button: "Découvrir la Supérette",
+    slug: "/lanterns",
+  },
+  {
+    id: 4,
+    image: "/images/sliders/slider-4.webp",
+    title: "Lavage sur Place",
+    subtitle: "Service lavage pendant que vous profitez du complexe.",
+    button: "Options lavage",
+    slug: "/lanterns",
+  },
+  {
+    id: 5,
+    image: "/images/sliders/slider-4.webp",
+    title: "Services Mécaniques",
+    subtitle: "Vidange, pneus, maintenance rapide et fiable pour votre véhicule.",
+    button: "Accéder au Garage",
+    slug: "/lanterns",
+  },
+  {
+    id: 6,
+    image: "/images/sliders/slider-4.webp",
+    title: "Espace Enfants",
+    subtitle: "Un espace sécurisé et gratuit pour le plaisir des plus petits.",
+    button: "Voir les Activités",
+    slug: "/lanterns",
+  },
+  {
+    id: 7,
+    image: "/images/sliders/slider-4.webp",
+    title: "Parking gratuit",
+    subtitle: "Parking spacieux, sécurisé et gratuit pour tous nos visiteurs.",
+    button: "Trouver une Place",
     slug: "/lanterns",
   },
 ];
@@ -1185,7 +1226,7 @@ const filterConfig = [
   },
 ];
 
-export default {
+const mock = {
   header_links,
   links,
   sublinks,
@@ -1214,3 +1255,5 @@ export default {
   slides,
   filterConfig,
 };
+
+export default mock;

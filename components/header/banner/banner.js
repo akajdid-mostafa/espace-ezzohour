@@ -14,7 +14,8 @@ export default function Banner({
         <div className={styles.wrapper}>
           <a className={styles.iconStroke}>{icons.Discount}</a>
           <p className={cn("paragraph-x-small", styles.text)}>
-            Save up to 60% with code ECONOVA.
+            Espace Ezzohour : Votre destination unique pour le carburant, la
+            restauration et l&apos;entretien auto.
           </p>
         </div>
 

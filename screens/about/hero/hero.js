@@ -9,10 +9,10 @@ export default function Hero() {
         <div className={styles.overlay}>
           <div className={styles.content}>
             <div className={cn("paragraph-medium", styles.subtitle)}>
-              About us
+              À propos d'Espace Ezzohour
             </div>
             <div className={cn("hero", styles.title)}>
-              Innovating for a greener tomorrow
+              L'écosystème commercial connecté de demain
             </div>
           </div>
         </div>

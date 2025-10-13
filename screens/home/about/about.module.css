@@ -18,7 +18,7 @@
   background-clip: text;
   background-repeat: no-repeat;
   background-size: 0% 100%, 100% 100%;
-  color: transparent;
+  /* color: transparent; */
   display: inline;
   animation: reveal-text linear both;
   animation-timeline: view();

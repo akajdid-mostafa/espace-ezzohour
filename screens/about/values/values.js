@@ -9,13 +9,13 @@ export default function Values({ values = mock.values }) {
     <div className={cn("section")}>
       <div className={cn("container")}>
         <div className={styles.heading}>
-          <div className={cn("label-medium", styles.text)}>Our values</div>
-          <div className={cn("heading-3", styles.title)}>Rooted in respect</div>
+          <div className={cn("label-medium", styles.text)}>Nos valeurs</div>
+          <div className={cn("heading-3", styles.title)}>Ancré dans l'excellence</div>
           <div className={cn("paragraph-medium", styles.description)}>
-            Our values are inspired by the enduring beauty of nature. We commit
-            to sustainability, innovation, and the responsible use of natural
-            resources, ensuring our products promote environmental stewardship
-            and continuous positive impact.
+            Nos valeurs sont inspirées par l'innovation technologique et l'excellence 
+            opérationnelle. Nous nous engageons pour la connectivité, l'intégration 
+            et l'expérience client 360°, garantissant que chaque interaction enrichit 
+            votre parcours et votre programme de fidélité unifié.
           </div>
         </div>
 

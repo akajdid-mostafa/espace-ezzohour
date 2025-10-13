@@ -10,11 +10,14 @@ export default function Layout({ children }) {
   const [visible, setVisible] = React.useState(false);
 
   React.useEffect(() => {
-    const initialVisit = !localStorage.getItem("visited");
+    // Check if we're on the client side
+    if (typeof window !== "undefined") {
+      const initialVisit = !localStorage.getItem("visited");
 
-    if (initialVisit) {
-      setVisible(true);
-      localStorage.setItem("visited", "true");
+      if (initialVisit) {
+        setVisible(true);
+        localStorage.setItem("visited", "true");
+      }
     }
   }, []);
 

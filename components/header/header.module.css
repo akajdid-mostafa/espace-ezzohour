@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  height: 112px;
+  height: 90px;
   background-color: var(--white);
   display: flex;
   z-index: 1000;
@@ -33,7 +33,7 @@
 .links {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 18px;
 }
 
 .link {
@@ -96,6 +96,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contact_button {
+  background-color: var(--success-600);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact_button:hover {
+  background-color: var(--success-700);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 768px) {
