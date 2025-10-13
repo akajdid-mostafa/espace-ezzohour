@@ -601,7 +601,7 @@ const tabs = [
 const blog_posts = [
   {
     id: 1,
-    image: "/images/speaker-view.webp",
+    image: "/images/gallery/1.jpg",
     title: "Harmony with nature",
     description:
       "Join the symphony of sustainability with our audio innovations that are as kind to your ears as they are to the earth.",
@@ -614,7 +614,7 @@ const blog_posts = [
   },
   {
     id: 2,
-    image: "/images/power-solutions.webp",
+    image: "/images/gallery/2.jpg",
     title: "Eco power solutions",
     description:
       "Energize your gadgets and your green conscience with our innovative charging solutions—where tech meets eco.",
@@ -627,7 +627,7 @@ const blog_posts = [
   },
   {
     id: 3,
-    image: "/images/modern-headphones.webp",
+    image: "/images/gallery/3.jpg",
     title: "Tunes for trees",
     description:
       "Dive into the acoustic embrace of our eco-conscious sound systems designed to delight both you and nature.",
@@ -640,7 +640,59 @@ const blog_posts = [
   },
   {
     id: 4,
-    image: "/images/store.webp",
+    image: "/images/gallery/4.jpg",
+    title: "The future is here",
+    description:
+      "Stay updated with the latest breakthroughs in eco-technology as we unveil cutting-edge products designed for tomorrow’s world.",
+    tag: "News & Events",
+    tagBackground: "var(--danger-600)",
+    date: "April 19, 2024",
+    comments: 1,
+    category: "news & events",
+    slug: "the-future-is-here",
+  },
+  {
+    id: 5,
+    image: "/images/gallery/10.jpg",
+    title: "The future is here",
+    description:
+      "Stay updated with the latest breakthroughs in eco-technology as we unveil cutting-edge products designed for tomorrow’s world.",
+    tag: "News & Events",
+    tagBackground: "var(--danger-600)",
+    date: "April 19, 2024",
+    comments: 1,
+    category: "news & events",
+    slug: "the-future-is-here",
+  },
+  {
+    id: 6,
+    image: "/images/gallery/6.jpg",
+    title: "The future is here",
+    description:
+      "Stay updated with the latest breakthroughs in eco-technology as we unveil cutting-edge products designed for tomorrow’s world.",
+    tag: "News & Events",
+    tagBackground: "var(--danger-600)",
+    date: "April 19, 2024",
+    comments: 1,
+    category: "news & events",
+    slug: "the-future-is-here",
+  },
+  {
+    id: 7,
+    image: "/images/gallery/14.jpg",
+    title: "The future is here",
+    description:
+      "Stay updated with the latest breakthroughs in eco-technology as we unveil cutting-edge products designed for tomorrow’s world.",
+    tag: "News & Events",
+    tagBackground: "var(--danger-600)",
+    date: "April 19, 2024",
+    comments: 1,
+    category: "news & events",
+    slug: "the-future-is-here",
+  },
+  {
+    id: 8,
+    image: "/images/gallery/16.jpg",
     title: "The future is here",
     description:
       "Stay updated with the latest breakthroughs in eco-technology as we unveil cutting-edge products designed for tomorrow’s world.",
@@ -657,26 +709,26 @@ const support = [
   {
     id: 1,
     icon: icons.Headset,
-    title: "Customer service",
-    subtitle: "Exceptional Support, Sustainable Solutions",
+    title: "Service Client 24/7",
+    subtitle: "Assistance et support disponibles à tout moment",
   },
   {
     id: 2,
     icon: icons.DeliveryBox,
-    title: "Fast free shipping",
-    subtitle: "Get free shipping on orders of $150 or more",
+    title: "Parking Gratuit",
+    subtitle: "Stationnement sécurisé et gratuit pour tous nos visiteurs",
   },
   {
     id: 3,
     icon: icons.Users,
-    title: "Refer a friend",
-    subtitle: "Refer a friend and get 15% off each other.",
+    title: "Programme de Fidélité",
+    subtitle: "Gagnez des points et profitez d'avantages exclusifs",
   },
   {
     id: 4,
     icon: icons.ShieldDone,
-    title: "Secure payment",
-    subtitle: "We ensure secure payment with PEV.",
+    title: "Sécurité Garantie",
+    subtitle: "Surveillance 24h/24 et environnement sécurisé",
   },
 ];
 
@@ -1096,7 +1148,7 @@ const cards = [
 const slides = [
   {
     id: 0,
-    image: "/images/sliders/slider-1.webp",
+    image: "/images/sliders/1.jpg",
     title: "Espace Ezzohour",
     subtitle: "Votre destination quotidienne à Tanger : tous vos services, réunis en un seul lieu",
     button: "Découvrir l'Espace",
@@ -1104,7 +1156,7 @@ const slides = [
   },
   {
     id: 1,
-    image: "/images/sliders/slider-2.webp",
+    image: "/images/sliders/2.jpg",
     title: "Station Carburant",
     subtitle: "Faites le plein avec Afriquia, 7j/7. Qualité, rapidité, fiabilité.",
     button: "Accéder à la Station",
@@ -1112,7 +1164,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "/images/sliders/slider-3.webp",
+    image: "/images/sliders/3.jpg",
     title: "Restauration & Pause",
     subtitle: "Pour vos repas et pauses gourmandes, à tout moment de la journée.",
     button: "Découvrir le Restaurant",
@@ -1120,7 +1172,7 @@ const slides = [
   },
   {
     id: 3,
-    image: "/images/sliders/slider-4.webp",
+    image: "/images/sliders/4.jpg",
     title: "Produits du Quotidien",
     subtitle: "Snacks, essentiels et produits frais à portée de main.",
     button: "Découvrir la Supérette",
@@ -1128,7 +1180,7 @@ const slides = [
   },
   {
     id: 4,
-    image: "/images/sliders/slider-4.webp",
+    image: "/images/sliders/5.jpg",
     title: "Lavage sur Place",
     subtitle: "Service lavage pendant que vous profitez du complexe.",
     button: "Options lavage",
@@ -1136,7 +1188,7 @@ const slides = [
   },
   {
     id: 5,
-    image: "/images/sliders/slider-4.webp",
+    image: "/images/sliders/6.jpg",
     title: "Services Mécaniques",
     subtitle: "Vidange, pneus, maintenance rapide et fiable pour votre véhicule.",
     button: "Accéder au Garage",
@@ -1144,7 +1196,7 @@ const slides = [
   },
   {
     id: 6,
-    image: "/images/sliders/slider-4.webp",
+    image: "/images/sliders/7.jpg",
     title: "Espace Enfants",
     subtitle: "Un espace sécurisé et gratuit pour le plaisir des plus petits.",
     button: "Voir les Activités",
@@ -1152,7 +1204,7 @@ const slides = [
   },
   {
     id: 7,
-    image: "/images/sliders/slider-4.webp",
+    image: "/images/sliders/8.jpg",
     title: "Parking gratuit",
     subtitle: "Parking spacieux, sécurisé et gratuit pour tous nos visiteurs.",
     button: "Trouver une Place",

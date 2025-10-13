@@ -16,17 +16,17 @@ export default function BlogPost({
 }) {
   return (
     <div className={styles.card}>
-      <div
+      {/* <div
         className={cn("subheading-small", styles.tag)}
         style={{
           backgroundColor: tagBackground,
         }}
       >
         {tag}
-      </div>
+      </div> */}
       <img src={image} className={styles.image} />
 
-      <div className={styles.content}>
+      {/* <div className={styles.content}>
         <div className={styles.row}>
           <div className={cn("paragraph-small", styles.date)}>
             {icons.Calendar} {date}
@@ -51,7 +51,7 @@ export default function BlogPost({
         >
           Read more
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }

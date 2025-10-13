@@ -21,7 +21,7 @@ export default function FeaturedPost({
         backgroundImage: `url(${image})`,
       }}
     >
-      <div className={styles.overlay}>
+      {/* <div className={styles.overlay}>
         <div
           className={cn("subheading-small", styles.tag)}
           style={{
@@ -58,7 +58,7 @@ export default function FeaturedPost({
             Read more
           </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

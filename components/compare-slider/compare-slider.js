@@ -49,24 +49,23 @@ export default function CompareSlider() {
       //   onMouseMove={handleMouseMove}
       onMouseLeave={() => setPosition(50)}
       style={{
-        backgroundImage: `url(/images/compare/1.jpg)`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/compare/1.jpg)`,
       }}
     >
       <div
         style={{
           clipPath: `polygon(0 0, ${position}% 0, ${position}% 100%, 0 100%)`,
-          backgroundImage: `url(/images/compare/2.jpg)`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/compare/2.jpg)`,
         }}
         className={styles.image}
       >
         <div className={cn("paragraph-medium", styles.subtitle)}>
-          Power Bloom
+        Clair, vivant, animé.
         </div>
-        <div className={cn("heading-3", styles.title)}>Orange</div>
+        <div className={cn("heading-3", styles.title)}>Journée</div>
       </div>
-
-      <div className={cn("paragraph-medium", styles.subtitle)}>Power Bloom</div>
-      <div className={cn("heading-3", styles.title)}>White</div>
+      <div className={cn("paragraph-medium", styles.subtitle)}>Calme, éclairé, serein</div>
+      <div className={cn("heading-3", styles.title)}>Nuit</div>
 
       <div
         className={styles.slider}
