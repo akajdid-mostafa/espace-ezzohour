@@ -21,6 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
+      <meta name="apple-mobile-web-app-title" content="Ezzohour" />
       <body className={cn(inter.variable, dmSans.variable)}>{children}</body>
     </html>
   );

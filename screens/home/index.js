@@ -142,7 +142,6 @@ export default function HomePage({ products = mock.products }) {
       />
 
       {/* <Categories /> */}
-      {/* <Intro /> */}
       {/* <ProductView {...product} /> */}
       <Compare />
       <Faqs />
@@ -153,6 +152,7 @@ export default function HomePage({ products = mock.products }) {
       {/* <BestSellers /> */}
       {/* <Marquees /> */}
       <News />
+      <Intro />
     </Layout>
   );
 }

@@ -9,15 +9,15 @@ export default function Intro() {
       <div className={cn("container")}>
         <div className={styles.overlay}>
           <div className={styles.content}>
-            <div className={cn("hero", styles.title)}>Go Pocket</div>
+            <div className={cn("hero-2", styles.title)}>Venez Nous Voir﻿</div>
             <div className={cn("paragraph-x-large", styles.subtitle)}>
-              Compact power, pure and simple.
+            On vous attend à Tanger, il suffit de passer !﻿
             </div>
             <Link
               href="/products/terra-tunes"
               className={cn("button", styles.button)}
             >
-              Shop now
+              Où nous trouver﻿
             </Link>
           </div>
         </div>

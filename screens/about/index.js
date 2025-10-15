@@ -6,12 +6,14 @@ import Marquee from "@/components/marquee";
 import Vision from "./vision";
 import History from "./history";
 import Companies from "./companies";
+import Support from "@/components/support";
 
 export default function AboutPage() {
   return (
     <Layout>
       <Hero />
       <Intro />
+      <Support />
       <Values />
       <Marquee />
       <Vision />
