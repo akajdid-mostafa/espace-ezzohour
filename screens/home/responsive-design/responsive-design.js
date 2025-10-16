@@ -3,6 +3,7 @@ import cn from "classnames";
 import styles from "./responsive-design.module.css";
 import icons from "@/constants/icons";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ResponsiveDesign({
   image = {
@@ -19,6 +20,7 @@ export default function ResponsiveDesign({
   },
   title = "Station Carburant",
   subtitle = "Au sein du complexe Espaces Ezzohour, profitez d'une station Afriquia moderne pour un plein rapide, carburants de qualité, et service ouvert 24h/24.",
+  href = "/station-carburant",
   className = "",
   reverse = false
 }) {
@@ -43,7 +45,9 @@ export default function ResponsiveDesign({
               className={styles.icon_image}
             />
             <div className={cn("heading-3", styles.title)}>
-              {title}
+              <Link href={href}>
+                {title}
+              </Link>
             </div>
             <div className={cn("paragraph-medium", styles.subtitle)}>
               {subtitle}

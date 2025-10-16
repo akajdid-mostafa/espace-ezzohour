@@ -3,12 +3,12 @@ import cn from "classnames";
 import styles from "./support.module.css";
 import mock from "@/constants/mock";
 
-export default function Support({ support = mock.support }) {
+export default function Support({ support = mock.support  ,data = [] }) {
   return (
     <div className={cn("section", styles.section)}>
       <div className={cn("container")}>
         <div className={styles.items}>
-          {support.map((item) => (
+          {data?.map((item) => (
             <div className={styles.item} key={item.id}>
               {item.icon}
               <div className={cn("subheading-medium", styles.title)}>

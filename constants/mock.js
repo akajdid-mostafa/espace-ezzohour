@@ -887,7 +887,8 @@ const faqs = [
   {
     id: 2,
     question: "À qui s’adresse le complexe ?",
-    answer: "À tous. Que vous soyez en déplacement, en pause, en famille ou du quartier, Espace Ezzohour est conçu pour s’adapter à vos rythmes et à vos besoins.",
+    answer:
+      "À tous. Que vous soyez en déplacement, en pause, en famille ou du quartier, Espace Ezzohour est conçu pour s’adapter à vos rythmes et à vos besoins.",
   },
   {
     id: 3,
@@ -1150,7 +1151,8 @@ const slides = [
     id: 0,
     image: "/images/sliders/1.jpg",
     title: "Espace Ezzohour",
-    subtitle: "Votre destination quotidienne à Tanger : tous vos services, réunis en un seul lieu",
+    subtitle:
+      "Votre destination quotidienne à Tanger : tous vos services, réunis en un seul lieu",
     button: "Découvrir l'Espace",
     slug: "/headphones",
   },
@@ -1158,7 +1160,8 @@ const slides = [
     id: 1,
     image: "/images/sliders/2.jpg",
     title: "Station Carburant",
-    subtitle: "Faites le plein avec Afriquia, 7j/7. Qualité, rapidité, fiabilité.",
+    subtitle:
+      "Faites le plein avec Afriquia, 7j/7. Qualité, rapidité, fiabilité.",
     button: "Accéder à la Station",
     slug: "/speakers",
   },
@@ -1166,7 +1169,8 @@ const slides = [
     id: 2,
     image: "/images/sliders/3.jpg",
     title: "Restauration & Pause",
-    subtitle: "Pour vos repas et pauses gourmandes, à tout moment de la journée.",
+    subtitle:
+      "Pour vos repas et pauses gourmandes, à tout moment de la journée.",
     button: "Découvrir le Restaurant",
     slug: "/charging-stations",
   },
@@ -1190,7 +1194,8 @@ const slides = [
     id: 5,
     image: "/images/sliders/6.jpg",
     title: "Services Mécaniques",
-    subtitle: "Vidange, pneus, maintenance rapide et fiable pour votre véhicule.",
+    subtitle:
+      "Vidange, pneus, maintenance rapide et fiable pour votre véhicule.",
     button: "Accéder au Garage",
     slug: "/lanterns",
   },
@@ -1278,6 +1283,404 @@ const filterConfig = [
   },
 ];
 
+const carburant = [
+  {
+    id: 1,
+    icon: icons.Headset,
+    title: "Services 24/7",
+    subtitle:
+      "Un service rapide et fiable, accessible à toute heure du jour et de la nuit.",
+  },
+  {
+    id: 2,
+    icon: icons.DeliveryBox,
+    title: "Carburant de Qualité",
+    subtitle:
+      "Essence et gasoil Afriquia, pour des performances et une fiabilité garanties.",
+  },
+  {
+    id: 3,
+    icon: icons.Users,
+    title: "Accueil Professionnel",
+    subtitle:
+      "Une équipe dédiée pour un service impeccable et un arrêt en toute sérénité.",
+  },
+  {
+    id: 4,
+    icon: icons.ShieldDone,
+    title: "Paiement Sécurisé",
+    subtitle:
+      "Faites le plein et payez en toute confiance grâce à nos systèmes sécurisés.",
+  },
+];
+
+const restaurant = [
+  {
+    id: 1,
+    icon: icons.Headset,
+    title: "Ouvert 7j/7",
+    subtitle:
+      "Un service continu pour répondre à vos envies, du matin au soir.",
+  },
+  {
+    id: 2,
+    icon: icons.DeliveryBox,
+    title: "Cuisine variée",
+    subtitle:
+      "Des plats équilibrés, des boissons fraîches et des encas pour tous les goûts.",
+  },
+  {
+    id: 3,
+    icon: icons.Users,
+    title: "Accueil chaleureux",
+    subtitle:
+      "Une équipe attentionnée pour un service rapide, convivial et professionnel.",
+  },
+  {
+    id: 4,
+    icon: icons.ShieldDone,
+    title: "Espace confortable",
+    subtitle:
+      " Un lieu pensé pour la détente, avec un cadre agréable et un accès facile.",
+  },
+];
+
+const superette = [
+  {
+    id: 1,
+    icon: icons.Headset,
+    title: "Ouverte 7j/7",
+    subtitle:
+      "Une supérette ouverte tous les jours, accessible du matin au soir.",
+  },
+  {
+    id: 2,
+    icon: icons.DeliveryBox,
+    title: "Prix accessibles",
+    subtitle:
+      "Des produits essentiels à des prix adaptés à tous les budgets.",
+  },
+  {
+    id: 3,
+    icon: icons.Users,
+    title: "Produits locaux",
+    subtitle:
+      "Une sélection soignée de marques marocaines et de produits du terroir.",
+  },
+  {
+    id: 4,
+    icon: icons.ShieldDone,
+    title: "Pause gourmande",
+    subtitle:
+      "Snacks, boissons et encas disponibles pour toutes vos petites faims.",
+  },
+];
+
+const lavage = [
+  {
+    id: 1,
+    icon: icons.Headset,
+    title: "Ouvert 7j/7",
+    subtitle:
+      "Un service disponible tous les jours, du matin au soir.",
+  },
+  {
+    id: 2,
+    icon: icons.DeliveryBox,
+    title: "Nettoyage expert",
+    subtitle:
+      "Produits pro et gestes précis pour un résultat soigné.",
+  },
+  {
+    id: 3,
+    icon: icons.Users,
+    title: "Tous véhicules",
+    subtitle:
+      "Voitures, utilitaires et camions pris en charge avec soin.",
+  },
+  {
+    id: 4,
+    icon: icons.ShieldDone,
+    title: "Produits premium",
+    subtitle:
+      "Des solutions de lavage haut de gamme pour un rendu impeccable.",
+  },
+];
+
+const garage = [
+  {
+    id: 1,
+    icon: icons.Headset,
+    title: "Services 24/7",
+    subtitle:
+      "Un service rapide et fiable, accessible à toute heure du jour et de la nuit.",
+  },
+  {
+    id: 2,
+    icon: icons.DeliveryBox,
+    title: "Carburant de Qualité",
+    subtitle:
+      "Essence et gasoil Afriquia, pour des performances et une fiabilité garanties.",
+  },
+  {
+    id: 3,
+    icon: icons.Users,
+    title: "Accueil Professionnel",
+    subtitle:
+      "Une équipe dédiée pour un service impeccable et un arrêt en toute sérénité.",
+  },
+  {
+    id: 4,
+    icon: icons.ShieldDone,
+    title: "Paiement Sécurisé",
+    subtitle:
+      "Faites le plein et payez en toute confiance grâce à nos systèmes sécurisés.",
+  },
+];
+
+const jeux = [
+  {
+    id: 1,
+    icon: icons.Headset,
+    title: "Services 24/7",
+    subtitle:
+      "Un service rapide et fiable, accessible à toute heure du jour et de la nuit.",
+  },
+  {
+    id: 2,
+    icon: icons.DeliveryBox,
+    title: "Carburant de Qualité",
+    subtitle:
+      "Essence et gasoil Afriquia, pour des performances et une fiabilité garanties.",
+  },
+  {
+    id: 3,
+    icon: icons.Users,
+    title: "Accueil Professionnel",
+    subtitle:
+      "Une équipe dédiée pour un service impeccable et un arrêt en toute sérénité.",
+  },
+  {
+    id: 4,
+    icon: icons.ShieldDone,
+    title: "Paiement Sécurisé",
+    subtitle:
+      "Faites le plein et payez en toute confiance grâce à nos systèmes sécurisés.",
+  },
+];
+
+const parking = [
+  {
+    id: 1,
+    icon: icons.Headset,
+    title: "Services 24/7",
+    subtitle:
+      "Un service rapide et fiable, accessible à toute heure du jour et de la nuit.",
+  },
+  {
+    id: 2,
+    icon: icons.DeliveryBox,
+    title: "Carburant de Qualité",
+    subtitle:
+      "Essence et gasoil Afriquia, pour des performances et une fiabilité garanties.",
+  },
+  {
+    id: 3,
+    icon: icons.Users,
+    title: "Accueil Professionnel",
+    subtitle:
+      "Une équipe dédiée pour un service impeccable et un arrêt en toute sérénité.",
+  },
+  {
+    id: 4,
+    icon: icons.ShieldDone,
+    title: "Paiement Sécurisé",
+    subtitle:
+      "Faites le plein et payez en toute confiance grâce à nos systèmes sécurisés.",
+  },
+];
+
+const serviceHeroData = {
+  station: {
+    subtitle: "Station Carburant",
+    title: "Faites le plein avec Afriquia, 7j/7. Qualité, rapidité, fiabilité.",
+    backgroundImage: "/images/sliders/2.jpg",
+  },
+  restaurant: {
+    subtitle: "Restauration & Pause",
+    title: "Pour vos repas et pauses gourmandes, à tout moment de la journée.",
+    backgroundImage: "/images/sliders/3.jpg",
+  },
+  superette: {
+    subtitle: "Produits du Quotidien",
+    title: "Snacks, essentiels et produits frais à portée de main.",
+    backgroundImage: "/images/sliders/4.jpg",
+  },
+  lavage: {
+    subtitle: "Lavage sur Place",
+    title: "Service lavage pendant que vous profitez du complexe.",
+    backgroundImage: "/images/sliders/5.jpg",
+  },
+  garage: {
+    subtitle: "Services Mécaniques",
+    title: "Vidange, pneus, maintenance rapide et fiable pour votre véhicule.",
+    backgroundImage: "/images/sliders/6.jpg",
+  },
+  jeux: {
+    subtitle: "Espace Enfants",
+    title: "Un espace sécurisé et gratuit pour le plaisir des plus petits.",
+    backgroundImage: "/images/sliders/7.jpg",
+  },
+  parking: {
+    subtitle: "Parking Gratuit",
+    title: "Parking spacieux, sécurisé et gratuit pour tous nos visiteurs.",
+    backgroundImage: "/images/sliders/8.jpg",
+  },
+};
+
+const serviceIntroData = {
+  station: {
+    icon: {
+      src: "/images/espace/station-carburant-icon.svg",
+      alt: "Station Carburant Icon",
+      width: 48,
+      height: 48,
+    },
+    image: {
+      src: "/images/sliders/2.jpg",
+      alt: "Station Carburant",
+      width: 600,
+      height: 400,
+    },
+    title: "Votre partenaire de route",
+    descriptions: [
+      "La station-service Afriquia Espaces Ezzohour à Tanger vous accueille 24h/24 et 7j/7 avec un service rapide, fiable et adapté à tous les véhicules. Que vous soyez professionnel, particulier ou simplement de passage, chaque arrêt devient une pause efficace et sereine.",
+      "Nous proposons de l'essence et du gasoil Afriquia, reconnus pour leur qualité et leur performance, ainsi qu'une sélection Afriquia Lubrifiants pour accompagner l'entretien de votre véhicule. L'équipe est professionnelle, le service est fluide, et les avantages d'Afriquia sont là pour simplifier vos trajets à Tanger et partout au Maroc.",
+    ],
+    buttonText: "Notre Histoire",
+  },
+  restaurant: {
+    icon: {
+      src: "/images/espace/cafe-restaurant-icon.svg",
+      alt: "Restaurant Icon",
+      width: 48,
+      height: 48,
+    },
+    image: {
+      src: "/images/sliders/3.jpg",
+      alt: "Restaurant",
+      width: 600,
+      height: 400,
+    },
+    title: "Votre pause gourmande, à tout moment",
+    descriptions: [
+      "Le Café-Restaurant Ezzohour vous accueille tous les jours dans un cadre chaleureux et convivial, parfait pour un petit-déjeuner, un déjeuner, un dîner ou une simple pause-café. Que vous soyez un professionnel en déplacement, un voyageur de passage ou une famille en quête d'un moment agréable, notre espace de restauration s'adapte à vos envies et à votre rythme.",
+      "Nous proposons une sélection variée de plats, de boissons et d'encas préparés avec soin et servis avec le sourire. Notre espace confortable et notre service fluide font de chaque visite un moment agréable, simple et savoureux.",
+    ],
+    buttonText: "Découvrir le Menu",
+  },
+  superette: {
+    icon: {
+      src: "/images/espace/supette-icon.svg",
+      alt: "Superette Icon",
+      width: 48,
+      height: 48,
+    },
+    image: {
+      src: "/images/sliders/supette.png",
+      alt: "Superette",
+      width: 600,
+      height: 400,
+    },
+    title: "Tout ce qu’il vous faut, à portée de main",
+    descriptions: [
+      "La supérette Ezzohour vous accueille tous les jours avec une offre variée de produits du quotidien, pensée pour les familles, les professionnels et les voyageurs de passage. Située au cœur du complexe, elle facilite vos courses rapides grâce à un accès facile, un parking gratuit et un service fluide.",
+      "Vous y trouverez des produits alimentaires, des boissons, des articles d’hygiène, des snacks et bien plus encore le tout dans un espace propre, organisé et agréable. Que ce soit pour un complément de courses, un achat de dernière minute ou une pause gourmande, notre supérette répond à vos besoins avec simplicité et efficacité.",
+    ],
+    buttonText: "Voir les Produits",
+  },
+  lavage: {
+    icon: {
+      src: "/images/espace/lavage-auto-icon.svg",
+      alt: "Lavage Icon",
+      width: 48,
+      height: 48,
+    },
+    image: {
+      src: "/images/sliders/lavage-auto.png",
+      alt: "Lavage Auto",
+      width: 600,
+      height: 400,
+    },
+    title: "Nettoyage expert pour tous vos véhicules",
+    descriptions: [
+      "Le service de lavage auto d’Espace Ezzohour vous propose un nettoyage complet, soigné et adapté à tous les types de véhicules—des voitures particulières aux poids lourds. Grâce à des produits professionnels et des techniques éprouvées, nous assurons un résultat impeccable à chaque passage.",
+      "Que ce soit entre deux courses, après une pause café ou sur le chemin du travail, nous prenons soin de votre véhicule avec rigueur et efficacité. L’espace est accessible, le service est fluide, et le parking gratuit facilite chaque visite.",
+    ],
+    buttonText: "Nos Formules",
+  },
+  garage: {
+    icon: {
+      src: "/images/espace/garage-maintenance-icon.svg",
+      alt: "Garage Icon",
+      width: 48,
+      height: 48,
+    },
+    image: {
+      src: "/images/sliders/6.jpg",
+      alt: "Garage",
+      width: 600,
+      height: 400,
+    },
+    title: "L'entretien de confiance",
+    descriptions: [
+      "Notre garage professionnel vous propose tous les services d'entretien et de réparation automobile. De la vidange aux réparations mécaniques, notre équipe de techniciens qualifiés prend soin de votre véhicule avec expertise et transparence.",
+      "Nous utilisons des pièces de qualité et des équipements modernes pour garantir un service fiable et durable. Que ce soit pour un entretien préventif ou une réparation d'urgence, nous nous engageons à vous offrir un service de qualité à des prix justes.",
+    ],
+    buttonText: "Nos Services",
+  },
+  jeux: {
+    icon: {
+      src: "/images/espace/espace-jeux-iconn.svg",
+      alt: "Jeux Icon",
+      width: 48,
+      height: 48,
+    },
+    image: {
+      src: "/images/sliders/7.jpg",
+      alt: "Espace Jeux",
+      width: 600,
+      height: 400,
+    },
+    title: "L'espace des petits",
+    descriptions: [
+      "Un espace dédié et sécurisé pour que vos enfants puissent s'amuser en toute sécurité pendant que vous profitez des autres services. Notre aire de jeux moderne et colorée offre un environnement ludique et stimulant pour les plus jeunes.",
+      "Équipée de jeux adaptés à différents âges, notre zone enfants est surveillée et conçue pour le bien-être et l'épanouissement de vos petits. Gratuite et accessible, elle permet aux familles de profiter pleinement de leur visite au complexe.",
+    ],
+    buttonText: "Découvrir l'Espace",
+  },
+  parking: {
+    icon: {
+      src: "/images/espace/parking-icon.svg",
+      alt: "Parking Icon",
+      width: 48,
+      height: 48,
+    },
+    image: {
+      src: "/images/sliders/8.jpg",
+      alt: "Parking",
+      width: 600,
+      height: 400,
+    },
+    title: "Votre place vous attend",
+    descriptions: [
+      "Un parking spacieux, sécurisé et entièrement gratuit pour tous nos visiteurs. Que vous veniez pour quelques minutes ou plusieurs heures, vous trouverez toujours une place adaptée à votre véhicule dans un environnement surveillé.",
+      "Notre parking est conçu pour faciliter vos déplacements avec des allées larges, un éclairage optimal et une signalétique claire. Accessible 24h/24, il vous offre la tranquillité d'esprit nécessaire pour profiter pleinement de tous nos services.",
+    ],
+    buttonText: "Plan du Parking",
+  },
+};
+
 const mock = {
   header_links,
   links,
@@ -1306,6 +1709,15 @@ const mock = {
   cards,
   slides,
   filterConfig,
+  carburant,
+  restaurant,
+  superette,
+  lavage,
+  garage,
+  jeux,
+  parking,
+  serviceHeroData,
+  serviceIntroData,
 };
 
 export default mock;

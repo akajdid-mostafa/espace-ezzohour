@@ -47,6 +47,10 @@
   margin-top: 24px;
 }
 
+.title a {
+  color: var(--black) !important;
+}
+
 .subtitle {
   margin-top: 12px;
   color: var(--slate-500);

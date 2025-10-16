@@ -47,6 +47,7 @@ export default function HomePage({ products = mock.products }) {
         title="Café Restaurant"
         subtitle="Notre café restaurant sur place vous propose une terrasse agréable et une carte diversifiée, idéale du petit-déjeuner au dîner pour tous les goûts."
         reverse={true}
+        href="/cafe-restaurant"
       />
       
       {/* Example 3: Custom content for fuel station */}
@@ -65,6 +66,7 @@ export default function HomePage({ products = mock.products }) {
         }}
         title="Supérette"
         subtitle="Trouvez dans notre supérette tout ce dont vous avez besoin : snacks, boissons, produits essentiels et courses rapides au même endroit.﻿ "
+        href="/superette"
       />
       
       {/* Example 4: Custom content for restaurant */}
@@ -84,6 +86,7 @@ export default function HomePage({ products = mock.products }) {
         title="Lavage Auto"
         subtitle="Facilitez-vous la vie avec le lavage auto professionnel dans le complexe : nettoyage manuel, automatique ou libre-service pendant votre pause."
         reverse={true}
+        href="/lavage-auto"
       />
       {/* Example 5: Custom content for fuel station */}
       <ResponsiveDesign
@@ -102,6 +105,7 @@ export default function HomePage({ products = mock.products }) {
         title="Garage maintenance"
         subtitle="Le garage Espaces Ezzohour prend soin de votre voiture avec entretien complet, vidange, pneus et techniciens qualifiés à proximité directe de tous nos services.
 "
+        href="/garage-maintenance"
       />
 
             {/* Example 6: Custom content for restaurant */}
@@ -121,6 +125,7 @@ export default function HomePage({ products = mock.products }) {
         title="Espace Jeux"
         subtitle="Vos enfants peuvent profiter d’un espace jeux sécurisé et gratuit, tout près des autres services, pour une visite en toute tranquillité chez Espaces Ezzohour."
         reverse={true}
+        href="/espace-jeux"
       />
 
        {/* Example 7: Custom content for fuel station */}
@@ -139,6 +144,7 @@ export default function HomePage({ products = mock.products }) {
         }}
         title="Parking"
         subtitle="Que vous visitiez Espaces Ezzohour ou soyez simplement de passage, notre parking gratuit et sécurisé accueille tous les véhicules pour un arrêt facile et serein."
+        href="/parking"
       />
 
       {/* <Categories /> */}
