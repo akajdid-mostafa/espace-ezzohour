@@ -1,5 +1,5 @@
-import CollectionsPage from "@/screens/collections";
+import StationCarburantPage from "@/screens/station-carburant";
 
 export default function Collections() {
-  return <CollectionsPage />;
+  return <StationCarburantPage />;
 }
