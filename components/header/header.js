@@ -115,15 +115,6 @@ export default function Header({ header_links = mock.header_links }) {
                 </li>
               ))}
             </ul>
-            <div className={styles.footer}>
-              <Link
-                href="/login"
-                className={cn("button-small", styles.footer_button)}
-              >
-                Login
-              </Link>
-              <Socials />
-            </div>
           </nav>
 
           <div className={styles.btns}>
@@ -132,9 +123,72 @@ export default function Header({ header_links = mock.header_links }) {
                 Contact Us
               </Link>
             </button>
+            
+            {/* Mobile Menu Button */}
+            <button 
+              className={styles.mobile_menu_button}
+              onClick={() => setVisibleNav(!visibleNav)}
+            >
+              {visibleNav ? icons.Close : icons.Menu}
+            </button>
           </div>
         </div>
       </header>
+
+      {/* Mobile Side Menu */}
+      <div 
+        className={cn(styles.mobile_menu, {
+          [styles.mobile_menu_active]: visibleNav,
+        })}
+        onClick={(e) => {
+          if (e.target === e.currentTarget) {
+            setVisibleNav(false);
+          }
+        }}
+      >
+        <div className={styles.mobile_menu_content}>
+          <div className={styles.mobile_menu_header}>
+            <Image 
+              src="/images/logo/logo.svg" 
+              alt="Espace Ezzohour Logo" 
+              width={120} 
+              height={60}
+            />
+            <button 
+              className={styles.mobile_close_button}
+              onClick={() => setVisibleNav(false)}
+            >
+              {icons.Close}
+            </button>
+          </div>
+          
+          <nav className={styles.mobile_nav}>
+            <ul className={styles.mobile_links}>
+              {header_links.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={cn("label-large", styles.mobile_link)}
+                    onClick={() => setVisibleNav(false)}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          
+          <div className={styles.mobile_contact}>
+            <Link 
+              href="/contact-us" 
+              className={cn("button", styles.mobile_contact_button)}
+              onClick={() => setVisibleNav(false)}
+            >
+              Contactez-nous
+            </Link>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
