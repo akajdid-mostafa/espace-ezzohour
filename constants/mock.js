@@ -4,7 +4,7 @@ const header_links = [
   // { href: "/shop/all-products", label: "Ezzohour", type: "shop-menu" },
   { href: "/station-carburant", label: "Carburant", type: "collections-menu" },
   { href: "/cafe-restaurant", label: "Restaurant", type: "explore-menu" },
-  { href: "/superette", label: "Superette", type: "link" },
+  // { href: "/superette", label: "Superette", type: "link" },
   { href: "/lavage-auto", label: "Lavage", type: "link" },
   { href: "/garage-maintenance", label: "Garage", type: "link" },
   { href: "/espace-jeux", label: "Jeux", type: "link" },
@@ -40,11 +40,11 @@ const sublinks = [
     title: "Café Restaurant",
     href: "/cafe-restaurant",
   },
-  {
-    id: 3,
-    title: "Superette",
-    href: "/superette",
-  },
+  // {
+  //   id: 3,
+  //   title: "Superette",
+  //   href: "/superette",
+  // },
   {
     id: 4,
     title: "Lavage auto",

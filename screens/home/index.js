@@ -52,7 +52,7 @@ export default function HomePage({ products = mock.products }) {
       />
       
       {/* Example 3: Custom content for fuel station */}
-      <ResponsiveDesign
+      {/* <ResponsiveDesign
         image={{
           src: "/images/espace/supette.png",
           alt: "Supérette",
@@ -68,7 +68,7 @@ export default function HomePage({ products = mock.products }) {
         title="Supérette"
         subtitle="Trouvez dans notre supérette tout ce dont vous avez besoin : snacks, boissons, produits essentiels et courses rapides au même endroit.﻿ "
         href="/superette"
-      />
+      /> */}
       
       {/* Example 4: Custom content for restaurant */}
       <ResponsiveDesign
