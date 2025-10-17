@@ -4,7 +4,7 @@ import IntroServices from "@/components/intro-services";
 import Support from "@/components/support";
 import mock from "@/constants/mock";
 
-export default function LavageAutoPage() {
+export default function EspaceLavageAuto() {
   return (
     <Layout>
       <HeroServices {...mock.serviceHeroData.lavage} />

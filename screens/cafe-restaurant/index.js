@@ -4,7 +4,7 @@ import IntroServices from "@/components/intro-services";
 import Support from "@/components/support";
 import mock from "@/constants/mock";
 
-export default function CafeRestaurantPage() {
+export default function EspaceCafeRestaurant() {
   return (
     <Layout>
       <HeroServices {...mock.serviceHeroData.restaurant} />

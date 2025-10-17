@@ -2,13 +2,13 @@ import icons from "./icons";
 
 const header_links = [
   // { href: "/shop/all-products", label: "Ezzohour", type: "shop-menu" },
-  { href: "/collections", label: "Carburant", type: "collections-menu" },
-  { href: "/about", label: "Restaurant", type: "explore-menu" },
-  { href: "/contact-us", label: "Superette", type: "link" },
-  { href: "/theme-features", label: "Lavage", type: "link" },
-  { href: "/theme-features", label: "Garage", type: "link" },
-  { href: "/theme-features", label: "Jeux", type: "link" },
-  { href: "/theme-features", label: "Parking", type: "link" },
+  { href: "/station-carburant", label: "Carburant", type: "collections-menu" },
+  { href: "/cafe-restaurant", label: "Restaurant", type: "explore-menu" },
+  { href: "/superette", label: "Superette", type: "link" },
+  { href: "/lavage-auto", label: "Lavage", type: "link" },
+  { href: "/garage-maintenance", label: "Garage", type: "link" },
+  { href: "/espace-jeux", label: "Jeux", type: "link" },
+  { href: "/parking", label: "Parking", type: "link" },
 ];
 
 const links = [
@@ -1641,7 +1641,7 @@ const serviceIntroData = {
   },
   jeux: {
     icon: {
-      src: "/images/espace/espace-jeux-iconn.svg",
+      src: "/images/espace/espace-jeux-icon.svg",
       alt: "Jeux Icon",
       width: 48,
       height: 48,

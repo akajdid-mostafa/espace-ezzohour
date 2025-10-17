@@ -205,7 +205,9 @@ export default function Header({ header_links = mock.header_links }) {
               ></button>
             </div> */}
             <button className={styles.contact_button}>
-              Contact Us
+              <Link href="/contact-us"> 
+                Contact Us
+              </Link>
             </button>
           </div>
         </div>

@@ -4,7 +4,7 @@ import IntroServices from "@/components/intro-services";
 import Support from "@/components/support";
 import mock from "@/constants/mock";
 
-export default function SuperettePage() {
+export default function EspaceSuperette() {
   return (
     <Layout>
       <HeroServices {...mock.serviceHeroData.superette} />

@@ -1,5 +1,5 @@
-import AboutPage from "@/screens/about";
+import EspaceGarageMaintenance from "@/screens/garage-maintenance";
 
-export default function About() {
-  return <AboutPage />;
+export default function GarageMaintenance() {
+  return <EspaceGarageMaintenance />;
 }

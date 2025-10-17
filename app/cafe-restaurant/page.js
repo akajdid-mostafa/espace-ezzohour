@@ -1,5 +1,5 @@
-import AboutPage from "@/screens/about";
+import EspaceCafeRestaurant from "@/screens/cafe-restaurant";
 
-export default function About() {
-  return <AboutPage />;
+export default function CafeRestaurant() {
+  return <EspaceCafeRestaurant />;
 }

@@ -4,7 +4,7 @@ import IntroServices from "@/components/intro-services";
 import Support from "@/components/support";
 import mock from "@/constants/mock";
 
-export default function ParkingPage() {
+export default function EspaceParking() {
   return (
     <Layout>
       <HeroServices {...mock.serviceHeroData.parking} />

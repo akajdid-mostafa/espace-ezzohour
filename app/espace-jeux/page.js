@@ -1,5 +1,5 @@
-import AboutPage from "@/screens/about";
+import Jeux from "@/screens/espace-jeux";
 
-export default function About() {
-  return <AboutPage />;
+export default function EspaceJeux() {
+  return <Jeux />;
 }

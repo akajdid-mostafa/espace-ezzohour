@@ -1,5 +1,5 @@
-import AboutPage from "@/screens/about";
+import EspaceLavageAuto from "@/screens/lavage-auto";
 
-export default function About() {
-  return <AboutPage />;
+export default function LavageAuto() {
+  return <EspaceLavageAuto />;
 }

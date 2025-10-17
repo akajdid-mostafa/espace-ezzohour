@@ -1,5 +1,5 @@
-import AboutPage from "@/screens/about";
+import EspaceParking from "@/screens/parking";
 
-export default function About() {
-  return <AboutPage />;
+export default function Parking() {
+  return <EspaceParking />;
 }
