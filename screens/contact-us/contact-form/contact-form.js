@@ -138,7 +138,7 @@ export default function ContactForm({ options = mock.options }) {
           <div className={styles.block}>
             <div className={cn("paragraph-medium", styles.text)}>Email</div>
             <a href="mailto:contact@espace-ezzohour.ma" className={cn("label-medium", styles.link)}>
-            contact@espace-ezzohour.ma
+            contact@ezzohour.ma
             </a>
           </div>
 

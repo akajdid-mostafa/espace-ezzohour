@@ -36,7 +36,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Header />
-      {visible && <Subscribe visible={visible} handleClose={handleClose} />}
+      {/* {visible && <Subscribe visible={visible} handleClose={handleClose} />} */}
 
       {children}
 
