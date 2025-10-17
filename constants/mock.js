@@ -1159,7 +1159,7 @@ const slides = [
     subtitle:
       "Votre destination quotidienne à Tanger : tous vos services, réunis en un seul lieu",
     button: "Découvrir l'Espace",
-    slug: "/headphones",
+    slug: "/",
   },
   {
     id: 1,
@@ -1168,7 +1168,7 @@ const slides = [
     subtitle:
       "Faites le plein avec Afriquia, 7j/7. Qualité, rapidité, fiabilité.",
     button: "Accéder à la Station",
-    slug: "/speakers",
+    slug: "/station-carburant",
   },
   {
     id: 2,
@@ -1177,23 +1177,23 @@ const slides = [
     subtitle:
       "Pour vos repas et pauses gourmandes, à tout moment de la journée.",
     button: "Découvrir le Restaurant",
-    slug: "/charging-stations",
+    slug: "/cafe-restaurant",
   },
-  {
-    id: 3,
-    image: "/images/sliders/4.jpg",
-    title: "Produits du Quotidien",
-    subtitle: "Snacks, essentiels et produits frais à portée de main.",
-    button: "Découvrir la Supérette",
-    slug: "/lanterns",
-  },
+  // {
+  //   id: 3,
+  //   image: "/images/sliders/4.jpg",
+  //   title: "Produits du Quotidien",
+  //   subtitle: "Snacks, essentiels et produits frais à portée de main.",
+  //   button: "Découvrir la Supérette",
+  //   slug: "/",
+  // },
   {
     id: 4,
     image: "/images/sliders/5.jpg",
     title: "Lavage sur Place",
     subtitle: "Service lavage pendant que vous profitez du complexe.",
     button: "Options lavage",
-    slug: "/lanterns",
+    slug: "/lavage-auto",
   },
   {
     id: 5,
@@ -1202,7 +1202,7 @@ const slides = [
     subtitle:
       "Vidange, pneus, maintenance rapide et fiable pour votre véhicule.",
     button: "Accéder au Garage",
-    slug: "/lanterns",
+    slug: "/garage-maintenance",
   },
   {
     id: 6,
@@ -1210,7 +1210,7 @@ const slides = [
     title: "Espace Enfants",
     subtitle: "Un espace sécurisé et gratuit pour le plaisir des plus petits.",
     button: "Voir les Activités",
-    slug: "/lanterns",
+    slug: "/espace-jeux",
   },
   {
     id: 7,
@@ -1218,7 +1218,7 @@ const slides = [
     title: "Parking gratuit",
     subtitle: "Parking spacieux, sécurisé et gratuit pour tous nos visiteurs.",
     button: "Trouver une Place",
-    slug: "/lanterns",
+    slug: "/parking",
   },
 ];
 

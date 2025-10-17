@@ -50,7 +50,7 @@ export default function Slide({
               </div>
 
               <Link
-                href={`/shop/${slides[active].slug}`}
+                href={slides[active].slug}
                 className={cn("button", styles.button)}
               >
                 {slides[active].button}
