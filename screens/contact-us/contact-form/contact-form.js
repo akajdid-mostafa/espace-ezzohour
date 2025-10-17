@@ -12,65 +12,60 @@ export default function ContactForm({ options = mock.options }) {
         <div className={styles.col}>
           <form className={styles.form}>
             <div className={styles.wrapper}>
-              <TextField placeholder="Name" className={styles.textfield} />
+              <TextField placeholder="Nom" className={styles.textfield} />
               <TextField placeholder="Email" className={styles.textfield} />
             </div>
 
-            <div className={styles.wrapper}>
+            <div className={styles.wrapper1}>
               <TextField
-                placeholder="Phone number"
+                placeholder="Numéro de téléphone"
                 className={styles.textfield}
-              />
-              <Dropdown
-                placeholder="Select an option"
-                className={styles.dropdown}
-                options={options}
               />
             </div>
 
-            <TextArea placeholder="Your message" className={styles.textarea} />
+            <TextArea placeholder="Votre message" className={styles.textarea} />
 
-            <button className={cn("button", styles.button)}>Submit</button>
+            <button className={cn("button", styles.button)}>Envoyer</button>
           </form>
 
           <div className={cn("paragraph-medium", styles.protected)}>
-            This site is protected by reCAPTCHA and the Google 
-            <a className={styles.link}>Privacy Policy</a>
-             and 
-            <a className={styles.link}>Terms of Service</a>
-             apply.
+            Ce site est protégé par reCAPTCHA et la 
+            <a className={styles.link}>Politique de Confidentialité</a>
+             et les 
+            <a className={styles.link}>Conditions d&apos;Utilisation</a>
+             de Google s&apos;appliquent.
           </div>
         </div>
         <div className={styles.side_content}>
           <div className={styles.block}>
-            <div className={cn("paragraph-medium", styles.text)}>Address</div>
+            <div className={cn("paragraph-medium", styles.text)}>Adresse</div>
             <a className={cn("label-medium", styles.link)}>
-              shop@yourstore.com
+              Espace Ezzohour, Tanger, Maroc
             </a>
           </div>
 
           <div className={styles.block}>
             <div className={cn("paragraph-medium", styles.text)}>Email</div>
-            <a className={cn("label-medium", styles.link)}>
-              contact@yourstore.com
-            </a>
-            <a className={cn("label-medium", styles.link)}>
-              sales@yourstore.com
+            <a href="mailto:contact@espace-ezzohour.ma" className={cn("label-medium", styles.link)}>
+            contact@espace-ezzohour.ma
             </a>
           </div>
 
           <div className={styles.block}>
-            <div className={cn("paragraph-medium", styles.text)}>Phone</div>
-            <a className={cn("label-medium", styles.link)}>
-              +33 (0) 31-305-210
+            <div className={cn("paragraph-medium", styles.text)}>Téléphone</div>
+            <a href="tel:+212661918720" className={cn("label-medium", styles.link)}>
+            +212 6 61 91 87 20
             </a>
-            <a className={cn("label-medium", styles.link)}>
-              mon - fri: 09:00 - 17:00
+            <a  className={cn("label-medium", styles.link)}>
+            Station Carburant: lun - dim: 24h/24
+            </a>
+            <a  className={cn("label-medium", styles.link)}>
+              Autres services: lun - dim: 07h - 00h
             </a>
           </div>
 
           <div className={styles.block}>
-            <div className={cn("paragraph-medium", styles.text)}>Follow us</div>
+            <div className={cn("paragraph-medium", styles.text)}>Suivez-nous</div>
             <Socials />
           </div>
         </div>

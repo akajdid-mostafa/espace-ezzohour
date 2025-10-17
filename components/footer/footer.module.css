@@ -89,7 +89,7 @@
 }
 
 .sublink {
-  color: var(--slate-400);
+  color: var(--slate-1200);
   transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
 }
 

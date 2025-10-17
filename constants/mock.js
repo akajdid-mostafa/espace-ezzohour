@@ -14,22 +14,17 @@ const header_links = [
 const links = [
   {
     id: 1,
-    title: "About",
-    href: "/about",
+    title: "Ezzohour",
+    href: "/",
   },
-  {
-    id: 2,
-    title: "Journal",
-    href: "/journal",
-  },
+  // {
+  //   id: 2,
+  //   title: "FAQs",
+  //   href: "/faqs",
+  // },
   {
     id: 3,
-    title: "Faq's",
-    href: "/faqs",
-  },
-  {
-    id: 4,
-    title: "Contact us",
+    title: "Contact",
     href: "/contact-us",
   },
 ];
@@ -37,39 +32,49 @@ const links = [
 const sublinks = [
   {
     id: 1,
-    title: "Headphones",
-    href: "/headphones",
+    title: "Station Carburant",
+    href: "/station-carburant",
   },
   {
     id: 2,
-    title: "Speakers",
-    href: "/speakers",
+    title: "Café Restaurant",
+    href: "/cafe-restaurant",
   },
   {
     id: 3,
-    title: "Charging stations",
-    href: "/earphones",
+    title: "Superette",
+    href: "/superette",
   },
   {
     id: 4,
-    title: "Lanterns",
-    href: "/lanterns",
+    title: "Lavage auto",
+    href: "/lavage-auto",
   },
   {
     id: 5,
-    title: "Portable chargers",
-    href: "/portable-chargers",
+    title: "Garage",
+    href: "/garage-maintenance",
+  },
+  {
+    id: 6,
+    title: "Espace Jeux",
+    href: "/espace-jeux",
+  },
+  {
+    id: 7,
+    title: "Parking",
+    href: "/parking",
   },
 ];
 
 const social_links = [
   {
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/espace.ezzohour/",
     icon: icons.Instagram,
     icon_stroke: icons.InstagramStroke,
   },
   {
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/profile.php?id=61581691160238",
     icon: icons.Facebook,
     icon_stroke: icons.FacebookStroke,
   },
@@ -78,11 +83,11 @@ const social_links = [
     icon: icons.Tiktok,
     icon_stroke: icons.TiktokStroke,
   },
-  {
-    href: "https://www.youtube.com/",
-    icon: icons.Youtube,
-    icon_stroke: icons.YoutubeStroke,
-  },
+  // {
+  //   href: "https://www.youtube.com/",
+  //   icon: icons.Youtube,
+  //   icon_stroke: icons.YoutubeStroke,
+  // },
 ];
 
 const breadcrumbs = [
@@ -1411,30 +1416,30 @@ const garage = [
   {
     id: 1,
     icon: icons.Headset,
-    title: "Services 24/7",
+    title: "Ouvert 7j/7",
     subtitle:
-      "Un service rapide et fiable, accessible à toute heure du jour et de la nuit.",
+      "Un service disponible tous les jours, sans interruption.",
   },
   {
     id: 2,
     icon: icons.DeliveryBox,
-    title: "Carburant de Qualité",
+    title: "Transparence totale",
     subtitle:
-      "Essence et gasoil Afriquia, pour des performances et une fiabilité garanties.",
+      "Devis clairs, interventions expliquées, aucune surprise.",
   },
   {
     id: 3,
     icon: icons.Users,
-    title: "Accueil Professionnel",
+    title: "Équipe qualifiée",
     subtitle:
-      "Une équipe dédiée pour un service impeccable et un arrêt en toute sérénité.",
+      "Des mécaniciens expérimentés, à l’écoute et rigoureux.",
   },
   {
     id: 4,
     icon: icons.ShieldDone,
-    title: "Paiement Sécurisé",
+    title: "Équipements adaptés",
     subtitle:
-      "Faites le plein et payez en toute confiance grâce à nos systèmes sécurisés.",
+      "Du matériel professionnel pour un diagnostic précis et fiable.",
   },
 ];
 
@@ -1442,30 +1447,30 @@ const jeux = [
   {
     id: 1,
     icon: icons.Headset,
-    title: "Services 24/7",
+    title: "Espace sécurisé",
     subtitle:
-      "Un service rapide et fiable, accessible à toute heure du jour et de la nuit.",
+      "Jeux adaptés et surveillés pour une expérience ludique en toute confiance.",
   },
   {
     id: 2,
     icon: icons.DeliveryBox,
-    title: "Carburant de Qualité",
+    title: "Vue directe",
     subtitle:
-      "Essence et gasoil Afriquia, pour des performances et une fiabilité garanties.",
+      "Profitez du restaurant tout en gardant un œil sur vos enfants qui jouent.",
   },
   {
     id: 3,
     icon: icons.Users,
-    title: "Accueil Professionnel",
+    title: "Activités variées",
     subtitle:
-      "Une équipe dédiée pour un service impeccable et un arrêt en toute sérénité.",
+      "Autos tamponneuses, trampolines, structures gonflables et bien plus.",
   },
   {
     id: 4,
     icon: icons.ShieldDone,
-    title: "Paiement Sécurisé",
+    title: "Accès gratuit",
     subtitle:
-      "Faites le plein et payez en toute confiance grâce à nos systèmes sécurisés.",
+      "L’espace de jeux est 100 % gratuit, pour le plaisir des enfants et des parents.",
   },
 ];
 
@@ -1473,67 +1478,67 @@ const parking = [
   {
     id: 1,
     icon: icons.Headset,
-    title: "Services 24/7",
+    title: "Accès gratuit",
     subtitle:
-      "Un service rapide et fiable, accessible à toute heure du jour et de la nuit.",
+      "Parking 100 % gratuit, sans limite ni condition.",
   },
   {
     id: 2,
     icon: icons.DeliveryBox,
-    title: "Carburant de Qualité",
+    title: "Sécurité assurée",
     subtitle:
-      "Essence et gasoil Afriquia, pour des performances et une fiabilité garanties.",
+      "Clôturé, éclairé et surveillé jour et nuit.",
   },
   {
     id: 3,
     icon: icons.Users,
-    title: "Accueil Professionnel",
+    title: "Capacité généreuse",
     subtitle:
-      "Une équipe dédiée pour un service impeccable et un arrêt en toute sérénité.",
+      "Places disponibles même en forte affluence.",
   },
   {
     id: 4,
     icon: icons.ShieldDone,
-    title: "Paiement Sécurisé",
+    title: "Proximité immédiate",
     subtitle:
-      "Faites le plein et payez en toute confiance grâce à nos systèmes sécurisés.",
+      "Accès direct à tous les services Ezzohour.",
   },
 ];
 
 const serviceHeroData = {
   station: {
-    subtitle: "Station Carburant",
-    title: "Faites le plein avec Afriquia, 7j/7. Qualité, rapidité, fiabilité.",
+    subtitle: "Carburant fiable",
+    title: "Carburant premium garanti 24/24",
     backgroundImage: "/images/sliders/2.jpg",
   },
   restaurant: {
-    subtitle: "Restauration & Pause",
-    title: "Pour vos repas et pauses gourmandes, à tout moment de la journée.",
+    subtitle: "Cuisine du quotidien",
+    title: "Pause gourmande à tout moment",
     backgroundImage: "/images/sliders/3.jpg",
   },
   superette: {
-    subtitle: "Produits du Quotidien",
-    title: "Snacks, essentiels et produits frais à portée de main.",
+    subtitle: "Courses essentielles",
+    title: "Produits du quotidien en tout moment",
     backgroundImage: "/images/sliders/4.jpg",
   },
   lavage: {
-    subtitle: "Lavage sur Place",
-    title: "Service lavage pendant que vous profitez du complexe.",
+    subtitle: "Brillance express",
+    title: "Lavage auto complet et rapide",
     backgroundImage: "/images/sliders/5.jpg",
   },
   garage: {
-    subtitle: "Services Mécaniques",
-    title: "Vidange, pneus, maintenance rapide et fiable pour votre véhicule.",
+    subtitle: "Entretien automobile",
+    title: "Réparations fiable pour toutes véhicules",
     backgroundImage: "/images/sliders/6.jpg",
   },
   jeux: {
-    subtitle: "Espace Enfants",
-    title: "Un espace sécurisé et gratuit pour le plaisir des plus petits.",
+    subtitle: "Jeux sans limite",
+    title: "Espace 100 % fun pour les enfants",
     backgroundImage: "/images/sliders/7.jpg",
   },
   parking: {
-    subtitle: "Parking Gratuit",
-    title: "Parking spacieux, sécurisé et gratuit pour tous nos visiteurs.",
+    subtitle: "Parking gratuit",
+    title: "Stationnement toujours accessible 24/24",
     backgroundImage: "/images/sliders/8.jpg",
   },
 };
@@ -1552,7 +1557,7 @@ const serviceIntroData = {
       width: 600,
       height: 400,
     },
-    title: "Votre partenaire de route",
+    title: "Votre partenaire de route ",
     descriptions: [
       "La station-service Afriquia Espaces Ezzohour à Tanger vous accueille 24h/24 et 7j/7 avec un service rapide, fiable et adapté à tous les véhicules. Que vous soyez professionnel, particulier ou simplement de passage, chaque arrêt devient une pause efficace et sereine.",
       "Nous proposons de l'essence et du gasoil Afriquia, reconnus pour leur qualité et leur performance, ainsi qu'une sélection Afriquia Lubrifiants pour accompagner l'entretien de votre véhicule. L'équipe est professionnelle, le service est fluide, et les avantages d'Afriquia sont là pour simplifier vos trajets à Tanger et partout au Maroc.",
@@ -1572,7 +1577,7 @@ const serviceIntroData = {
       width: 600,
       height: 400,
     },
-    title: "Votre pause gourmande, à tout moment",
+    title: "Plaisir gourmand à Tanger",
     descriptions: [
       "Le Café-Restaurant Ezzohour vous accueille tous les jours dans un cadre chaleureux et convivial, parfait pour un petit-déjeuner, un déjeuner, un dîner ou une simple pause-café. Que vous soyez un professionnel en déplacement, un voyageur de passage ou une famille en quête d'un moment agréable, notre espace de restauration s'adapte à vos envies et à votre rythme.",
       "Nous proposons une sélection variée de plats, de boissons et d'encas préparés avec soin et servis avec le sourire. Notre espace confortable et notre service fluide font de chaque visite un moment agréable, simple et savoureux.",
@@ -1592,7 +1597,7 @@ const serviceIntroData = {
       width: 600,
       height: 400,
     },
-    title: "Tout ce qu’il vous faut, à portée de main",
+    title: "Fraîcheur quotidienne à chaque instant",
     descriptions: [
       "La supérette Ezzohour vous accueille tous les jours avec une offre variée de produits du quotidien, pensée pour les familles, les professionnels et les voyageurs de passage. Située au cœur du complexe, elle facilite vos courses rapides grâce à un accès facile, un parking gratuit et un service fluide.",
       "Vous y trouverez des produits alimentaires, des boissons, des articles d’hygiène, des snacks et bien plus encore le tout dans un espace propre, organisé et agréable. Que ce soit pour un complément de courses, un achat de dernière minute ou une pause gourmande, notre supérette répond à vos besoins avec simplicité et efficacité.",
@@ -1612,7 +1617,7 @@ const serviceIntroData = {
       width: 600,
       height: 400,
     },
-    title: "Nettoyage expert pour tous vos véhicules",
+    title: "Brillance parfaite à chaque passage",
     descriptions: [
       "Le service de lavage auto d’Espace Ezzohour vous propose un nettoyage complet, soigné et adapté à tous les types de véhicules—des voitures particulières aux poids lourds. Grâce à des produits professionnels et des techniques éprouvées, nous assurons un résultat impeccable à chaque passage.",
       "Que ce soit entre deux courses, après une pause café ou sur le chemin du travail, nous prenons soin de votre véhicule avec rigueur et efficacité. L’espace est accessible, le service est fluide, et le parking gratuit facilite chaque visite.",
@@ -1632,10 +1637,10 @@ const serviceIntroData = {
       width: 600,
       height: 400,
     },
-    title: "L'entretien de confiance",
+    title: "Fiabilité moteur sans compromis",
     descriptions: [
-      "Notre garage professionnel vous propose tous les services d'entretien et de réparation automobile. De la vidange aux réparations mécaniques, notre équipe de techniciens qualifiés prend soin de votre véhicule avec expertise et transparence.",
-      "Nous utilisons des pièces de qualité et des équipements modernes pour garantir un service fiable et durable. Que ce soit pour un entretien préventif ou une réparation d'urgence, nous nous engageons à vous offrir un service de qualité à des prix justes.",
+      "Le garage Ezzohour vous accueille tous les jours pour l’entretien et la maintenance de votre véhicule, qu’il s’agisse d’une voiture personnelle, d’un utilitaire ou d’un poids lourd. Notre équipe de mécaniciens qualifiés intervient avec rigueur et transparence, pour garantir votre sécurité et prolonger la durée de vie de votre moteur.",
+      "Révision, vidange, diagnostic, réparation, climatisation, pneus… Notre équipe qualifiée vous accompagne avec rigueur, grâce à des équipements adaptés pour un service rapide, fiable et complet.",
     ],
     buttonText: "Nos Services",
   },
@@ -1652,10 +1657,10 @@ const serviceIntroData = {
       width: 600,
       height: 400,
     },
-    title: "L'espace des petits",
+    title: "Jeux sans limite pour enfants",
     descriptions: [
-      "Un espace dédié et sécurisé pour que vos enfants puissent s'amuser en toute sécurité pendant que vous profitez des autres services. Notre aire de jeux moderne et colorée offre un environnement ludique et stimulant pour les plus jeunes.",
-      "Équipée de jeux adaptés à différents âges, notre zone enfants est surveillée et conçue pour le bien-être et l'épanouissement de vos petits. Gratuite et accessible, elle permet aux familles de profiter pleinement de leur visite au complexe.",
+      "Notre espace de jeux gratuit accueille vos enfants dans un cadre sécurisé et ludique, avec une large sélection d’activités : autos tamponneuses, trampolines, structures gonflables et bien plus encore. ",
+      "Pendant qu’ils explorent, sautent et rient, vous profitez d’une pause café bien méritée au restaurant, avec une vue directe sur l’aire de jeux. Tout est pensé pour que petits et grands passent un bon moment, dans un environnement convivial, pratique et rassurant.",
     ],
     buttonText: "Découvrir l'Espace",
   },
@@ -1672,10 +1677,10 @@ const serviceIntroData = {
       width: 600,
       height: 400,
     },
-    title: "Votre place vous attend",
+    title: "Stationnement sans stress",
     descriptions: [
-      "Un parking spacieux, sécurisé et entièrement gratuit pour tous nos visiteurs. Que vous veniez pour quelques minutes ou plusieurs heures, vous trouverez toujours une place adaptée à votre véhicule dans un environnement surveillé.",
-      "Notre parking est conçu pour faciliter vos déplacements avec des allées larges, un éclairage optimal et une signalétique claire. Accessible 24h/24, il vous offre la tranquillité d'esprit nécessaire pour profiter pleinement de tous nos services.",
+      "Notre espace de jeux gratuit accueille vos enfants dans un cadre sécurisé et ludique, avec une large sélection d’activités : autos tamponneuses, trampolines, structures gonflables et bien plus encore. ",
+      "Pendant qu’ils explorent, sautent et rient, vous profitez d’une pause café bien méritée au restaurant, avec une vue directe sur l’aire de jeux. Tout est pensé pour que petits et grands passent un bon moment, dans un environnement convivial, pratique et rassurant.",
     ],
     buttonText: "Plan du Parking",
   },

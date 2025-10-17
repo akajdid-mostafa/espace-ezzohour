@@ -8,7 +8,7 @@ import Compare from "./compare";
 import Marquee from "@/components/marquee";
 // import Sales from "./sales";
 // import Promo from "./promo";
-import Reviews from "./reviews";
+// import Reviews from "./reviews";
 // import BestSellers from "./best-sellers";
 // import Marquees from "@/components/marquees";
 import News from "./news";
@@ -16,6 +16,7 @@ import mock from "@/constants/mock";
 import ResponsiveDesign from "./responsive-design";
 // import icons from "@/constants/icons";
 import Faqs from "./faqs";
+import Features from "./features";
 
 export default function HomePage({ products = mock.products }) {
   const product = products.filter((product) => product.slug === "eco-tunes")[0];
@@ -154,9 +155,10 @@ export default function HomePage({ products = mock.products }) {
       <Marquee />
       {/* <Sales /> */}
       {/* <Promo /> */}
-      <Reviews />
+      {/* <Reviews /> */}
       {/* <BestSellers /> */}
       {/* <Marquees /> */}
+      <Features />
       <News />
       <Intro />
     </Layout>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Header from "./header";
-import Support from "./support";
+// import Support from "./support";
 import Footer from "./footer";
 import Subscribe from "./subscribe";
 
@@ -40,7 +40,7 @@ export default function Layout({ children }) {
 
       {children}
 
-      <Support />
+      {/* <Support /> */}
       <Footer />
     </>
   );

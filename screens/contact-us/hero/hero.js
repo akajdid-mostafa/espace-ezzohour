@@ -7,10 +7,10 @@ export default function Hero() {
     <div className={cn("section")}>
       <div className={cn("container")}>
         <div className={styles.heading}>
-          <div className={cn("hero", styles.title)}>Contact us</div>
+          <div className={cn("hero-2", styles.title)}>Contactez-nous</div>
           <div className={cn("paragraph-x-large", styles.subtitle)}>
-            We're here to help. Reach out for support, feedback, or any
-            questions you might have.
+            Nous sommes là pour vous aider. Pour toute question, suggestion ou
+            information sur nos services.
           </div>
         </div>
       </div>

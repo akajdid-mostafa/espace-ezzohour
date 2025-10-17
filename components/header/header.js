@@ -7,14 +7,8 @@ import icons from "@/constants/icons";
 import Link from "next/link";
 import Image from "next/image";
 import Banner from "./banner";
-// import ShopMenu from "./shop-menu";
-// import CollectionsMenu from "./collections-menu";
-// import ExploreMenu from "./explore-menu";
 import mock from "@/constants/mock";
 import Socials from "../socials/socials";
-import Modal from "../modal";
-import Search from "../search";
-import Cart from "../cart";
 import useCart from "@/store/useCart";
 
 export default function Header({ header_links = mock.header_links }) {
@@ -66,31 +60,6 @@ export default function Header({ header_links = mock.header_links }) {
     }
   };
 
-  // const renderMenu = (type) => {
-  //   switch (type) {
-  //     case "shop-menu":
-  //       // return (
-  //       //   <ShopMenu className={styles.menu} onMouseLeave={handleMouseLeave} />
-  //       // );
-  //     case "collections-menu":
-  //       // return (
-  //       //   <CollectionsMenu
-  //       //     className={styles.menu}
-  //       //     onMouseLeave={handleMouseLeave}
-  //       //   />
-  //       // );
-  //     case "explore-menu":
-  //       // return (
-  //       //   <ExploreMenu
-  //       //     className={styles.menu}
-  //       //     onMouseLeave={handleMouseLeave}
-  //       //   />
-  //       // );
-  //     default:
-  //       return null;
-  //   }
-  // };
-
   const handleMouseEnter = (type) => {
     if (window.innerWidth <= 768) {
       setActiveMenu(null);
@@ -99,22 +68,6 @@ export default function Header({ header_links = mock.header_links }) {
     }
   };
 
-  const handleMouseLeave = () => {
-    setActiveMenu(null);
-  };
-
-  const handleCloseSearch = () => {
-    setSearchModalVisible(false);
-  };
-
-  const handleCloseCart = () => {
-    setCartModalVisible(false);
-  };
-
-  const totalItems = cartItems.reduce(
-    (total, item) => total + item.quantity,
-    0
-  );
 
   return (
     <>
@@ -159,12 +112,9 @@ export default function Header({ header_links = mock.header_links }) {
                   >
                     {link.label}
                   </Link>
-
-                  {/* {activeMenu === link.type && renderMenu(link.type)} */}
                 </li>
               ))}
             </ul>
-
             <div className={styles.footer}>
               <Link
                 href="/login"
@@ -177,33 +127,6 @@ export default function Header({ header_links = mock.header_links }) {
           </nav>
 
           <div className={styles.btns}>
-            {/* <button
-              className={styles.search}
-              onClick={() => setSearchModalVisible(true)}
-            >
-              {icons.Search}
-            </button> */}
-           
-            {/* <button
-              className={styles.cart}
-              onClick={() => setCartModalVisible(true)}
-            >
-              {icons.Cart}
-              {totalItems > 0 && (
-                <span className={cn("label-x-small", styles.cart_indicator)}>
-                  {totalItems}
-                </span>
-              )}
-            </button> */}
-
-            {/* <div className={styles.menu_button}>
-              <button
-                className={cn(styles.burger, {
-                  [styles.active]: visibleNav,
-                })}
-                onClick={() => setVisibleNav(!visibleNav)}
-              ></button>
-            </div> */}
             <button className={styles.contact_button}>
               <Link href="/contact-us"> 
                 Contact Us
@@ -212,26 +135,6 @@ export default function Header({ header_links = mock.header_links }) {
           </div>
         </div>
       </header>
-
-      {searchModalVisible && (
-        <Modal
-          visible={searchModalVisible}
-          onClose={handleCloseSearch}
-          className={styles.modal}
-        >
-          <Search onClose={handleCloseSearch} />
-        </Modal>
-      )}
-
-      {cartModalVisible && (
-        <Modal
-          visible={cartModalVisible}
-          onClose={handleCloseCart}
-          className={styles.modal}
-        >
-          <Cart onClose={handleCloseCart} />
-        </Modal>
-      )}
     </>
   );
 }

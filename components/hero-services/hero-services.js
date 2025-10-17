@@ -18,7 +18,7 @@ export default function HeroServices({
             <div className={cn("paragraph-medium", styles.subtitle)}>
               {subtitle}
             </div>
-            <div className={cn("hero", styles.title)}>
+            <div className={cn("hero-2", styles.title)}>
               {title}
             </div>
           </div>

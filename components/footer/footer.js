@@ -18,7 +18,7 @@ export default function Footer({
         <div className={styles.col}>
           <div>
             <div className={cn("subheading-x-large", styles.title)}>
-              Subscribe to our newsletter
+              Abonnez-vous à notre newsletter
             </div>
             <form className={styles.form}>
               <div className={styles.content}>
@@ -26,7 +26,7 @@ export default function Footer({
                   label="Email"
                   type="email"
                   name="email"
-                  placeholder="Enter your email"
+                  placeholder="Entrez votre adresse e-mail"
                   className={styles.textfield}
                 />
                 <button className={styles.subscribe_button}>
@@ -35,20 +35,21 @@ export default function Footer({
               </div>
 
               <div className={cn("paragraph-x-small", styles.subscribe_text)}>
-                By subscribing, you agree to our responsible data use.
+                En vous abonnant, vous acceptez notre utilisation responsable
+                des données.
               </div>
             </form>{" "}
           </div>
 
           <div className={cn("label-x-small", styles.copyright)}>
-            © 2024 Nova - Tech Store. Powered by{" "}
+            © 2024 Espace Ezzohour. Powered by{" "}
             <a
-              href="https://twitter.com/capricorneng"
+              href="https://dynamicimpact.ma"
               target="_blank"
               rel="noreferrer"
               className={styles.author}
             >
-              Capricorn Engineering
+              Dynamic Impact
             </a>
           </div>
         </div>
@@ -80,12 +81,12 @@ export default function Footer({
           </div>
 
           <div className={styles.wrapper}>
-            <Link
+            {/* <Link
               href="/privacy-policy"
               className={cn("label-x-small", styles.text)}
             >
               Privacy Policy
-            </Link>
+            </Link> */}
 
             <div className={styles.socials}>
               {social_links.map((link, index) => (
