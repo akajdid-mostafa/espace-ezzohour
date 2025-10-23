@@ -150,7 +150,7 @@ export default function HomePage({ products = mock.products }) {
 
       {/* <Categories /> */}
       {/* <ProductView {...product} /> */}
-      <Compare />
+      {/* <Compare /> */}
       <Faqs />
       <Marquee />
       {/* <Sales /> */}

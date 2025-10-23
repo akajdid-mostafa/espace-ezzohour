@@ -79,7 +79,7 @@ const social_links = [
     icon_stroke: icons.FacebookStroke,
   },
   {
-    href: "https://www.tiktok.com/",
+    href: "https://www.tiktok.com/@espace.ezzohour?_t=ZS-90nIVncyHhv&_r=1",
     icon: icons.Tiktok,
     icon_stroke: icons.TiktokStroke,
   },
