@@ -12,16 +12,16 @@ export default function ContactForm({ options = mock.options }) {
     name: "",
     email: "",
     number: "",
-    message: ""
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -31,23 +31,26 @@ export default function ContactForm({ options = mock.options }) {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch('https://e-mail-dynamic.vercel.app/api/ezohour', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      });
+      const response = await fetch(
+        "https://e-mail-dynamic.vercel.app/api/ezohour",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
-        setSubmitStatus('success');
+        setSubmitStatus("success");
         setFormData({ name: "", email: "", number: "", message: "" });
       } else {
-        setSubmitStatus('error');
+        setSubmitStatus("error");
       }
     } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitStatus('error');
+      console.error("Error submitting form:", error);
+      setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
     }
@@ -59,20 +62,20 @@ export default function ContactForm({ options = mock.options }) {
         <div className={styles.col}>
           <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.wrapper}>
-              <TextField 
+              <TextField
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                placeholder="Nom" 
+                placeholder="Nom"
                 className={styles.textfield}
                 required
               />
-              <TextField 
+              <TextField
                 name="email"
                 type="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                placeholder="Email" 
+                placeholder="Email"
                 className={styles.textfield}
                 required
               />
@@ -89,28 +92,28 @@ export default function ContactForm({ options = mock.options }) {
               />
             </div>
 
-            <TextArea 
+            <TextArea
               name="message"
               value={formData.message}
               onChange={handleInputChange}
-              placeholder="Votre message" 
+              placeholder="Votre message"
               className={styles.textarea}
               required
             />
 
-            {submitStatus === 'success' && (
+            {submitStatus === "success" && (
               <div className={styles.success_message}>
                 Message envoyé avec succès ! Nous vous contacterons bientôt.
               </div>
             )}
 
-            {submitStatus === 'error' && (
+            {submitStatus === "error" && (
               <div className={styles.error_message}>
                 Erreur lors de l&apos;envoi du message. Veuillez réessayer.
               </div>
             )}
 
-            <button 
+            <button
               type="submit"
               className={cn("button", styles.button)}
               disabled={isSubmitting}
@@ -120,11 +123,15 @@ export default function ContactForm({ options = mock.options }) {
           </form>
 
           <div className={cn("paragraph-medium", styles.protected)}>
-            Ce site est protégé par reCAPTCHA et la 
-            <a className={styles.link}>Politique de Confidentialité</a>
-             et les 
-            <a className={styles.link}>Conditions d&apos;Utilisation</a>
-             de Google s&apos;appliquent.
+            Ce site est protégé par CAPTCHA et la{" "}
+            <a href="#" className={styles.link}>
+              Politique de confidentialité
+            </a>{" "}
+            ainsi que les{" "}
+            <a href="#" className={styles.link}>
+              Conditions d’utilisation
+            </a>{" "}
+            de Google s’appliquent.
           </div>
         </div>
         <div className={styles.side_content}>
@@ -137,26 +144,34 @@ export default function ContactForm({ options = mock.options }) {
 
           <div className={styles.block}>
             <div className={cn("paragraph-medium", styles.text)}>Email</div>
-            <a href="mailto:contact@espace-ezzohour.ma" className={cn("label-medium", styles.link)}>
-            contact@ezzohour.ma
+            <a
+              href="mailto:contact@espace-ezzohour.ma"
+              className={cn("label-medium", styles.link)}
+            >
+              contact@ezzohour.ma
             </a>
           </div>
 
           <div className={styles.block}>
             <div className={cn("paragraph-medium", styles.text)}>Téléphone</div>
-            <a href="tel:+212661918720" className={cn("label-medium", styles.link)}>
-            +212 6 61 91 87 20
+            <a
+              href="tel:+212661918720"
+              className={cn("label-medium", styles.link)}
+            >
+              +212 6 61 91 87 20
             </a>
-            <a  className={cn("label-medium", styles.link)}>
-            Station Carburant: lun - dim: 24h/24
+            <a className={cn("label-medium", styles.link)}>
+              Station Carburant: lun - dim: 24h/24
             </a>
-            <a  className={cn("label-medium", styles.link)}>
+            <a className={cn("label-medium", styles.link)}>
               Autres services: lun - dim: 07h - 00h
             </a>
           </div>
 
           <div className={styles.block}>
-            <div className={cn("paragraph-medium", styles.text)}>Suivez-nous</div>
+            <div className={cn("paragraph-medium", styles.text)}>
+              Suivez-nous
+            </div>
             <Socials />
           </div>
         </div>
@@ -164,4 +179,3 @@ export default function ContactForm({ options = mock.options }) {
     </div>
   );
 }
-

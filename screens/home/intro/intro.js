@@ -14,10 +14,10 @@ export default function Intro() {
             On vous attend à Tanger, il suffit de passer !﻿
             </div>
             <Link
-              href="/products/terra-tunes"
+              href="/contact-us"
               className={cn("button", styles.button)}
             >
-              Où nous trouver﻿
+              Contactez-nous
             </Link>
           </div>
         </div>

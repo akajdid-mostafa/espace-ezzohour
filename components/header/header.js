@@ -71,11 +71,11 @@ export default function Header({ header_links = mock.header_links }) {
 
   return (
     <>
-      <Banner
+      {/* <Banner
         className={cn(styles.banner, {
           [styles.active]: visibleNav,
         })}
-      />
+      /> */}
 
       <header
         className={cn(styles.header, {
@@ -120,7 +120,7 @@ export default function Header({ header_links = mock.header_links }) {
           <div className={styles.btns}>
             <button className={styles.contact_button}>
               <Link href="/contact-us"> 
-                Contact Us
+                Contact
               </Link>
             </button>
             
