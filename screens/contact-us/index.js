@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import Hero from "./hero";
+import Maps from "./maps";
 import ContactForm from "./contact-form";
 
 export default function ContactUsPage() {
@@ -7,6 +8,7 @@ export default function ContactUsPage() {
     <Layout>
       <Hero />
       <ContactForm />
+      <Maps />
     </Layout>
   );
 }

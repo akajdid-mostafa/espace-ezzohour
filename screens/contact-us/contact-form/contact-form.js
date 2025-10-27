@@ -57,7 +57,7 @@ export default function ContactForm({ options = mock.options }) {
   };
 
   return (
-    <div className={cn("section")}>
+    <div >
       <div className={cn("container", styles.container)}>
         <div className={styles.col}>
           <form className={styles.form} onSubmit={handleSubmit}>
@@ -129,12 +129,15 @@ export default function ContactForm({ options = mock.options }) {
             </a>{" "}
             ainsi que les{" "}
             <a href="#" className={styles.link}>
-              Conditions d’utilisation
+              Conditions d&apos;utilisation
             </a>{" "}
-            de Google s’appliquent.
+            de Google s&apos;appliquent.
           </div>
+          
         </div>
         <div className={styles.side_content}>
+          
+
           <div className={styles.block}>
             <div className={cn("paragraph-medium", styles.text)}>Adresse</div>
             <a className={cn("label-medium", styles.link)}>
@@ -174,7 +177,9 @@ export default function ContactForm({ options = mock.options }) {
             </div>
             <Socials />
           </div>
+          
         </div>
+        
       </div>
     </div>
   );

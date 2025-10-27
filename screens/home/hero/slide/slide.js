@@ -10,7 +10,7 @@ export default function Slide({
   slides,
   active,
   custom,
-  setActive,
+  setActive, // This is the prop passed from Hero component
   prevSlide,
   nextSlide,
   variants,
@@ -67,7 +67,7 @@ export default function Slide({
               <Indicators
                 indicators={slides}
                 active={active}
-                setActive={setActive}
+                setActive={setActive} // Use the prop that was passed
                 color={"var(--white)"}
               />
 

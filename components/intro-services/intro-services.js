@@ -3,6 +3,7 @@ import cn from "classnames";
 import styles from "./intro-services.module.css";
 import icons from "@/constants/icons";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function IntroServices({
   icon = {
@@ -22,7 +23,8 @@ export default function IntroServices({
     "Description par défaut du service."
   ],
   buttonText = "Notre Histoire",
-  buttonIcon = icons.ArrowRight
+  buttonIcon = icons.ArrowRight,
+  buttonLink="/contact-us"
 }) {
   return (
     <div className={cn("section")}>
@@ -53,9 +55,11 @@ export default function IntroServices({
               {description}
             </div>
           ))}
-          <button className={cn("button", styles.button)}>
+           <Link href={buttonLink}>
+          <button  className={cn("button", styles.button)}>
             {buttonText} {buttonIcon}
           </button>
+          </Link>
         </div>
       </div>
     </div>

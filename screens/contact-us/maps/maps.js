@@ -1,22 +1,14 @@
 import React from "react";
 import cn from "classnames";
-import styles from "./hero.module.css";
+import styles from "./maps.module.css";
 
 export default function Hero() {
   return (
-    <div className={cn("section")}>
+    <div className={cn("section")} >
       <div className={cn("container")}>
-        <div className={styles.heading}>
-          <div className={cn("hero-2", styles.title)}>Contactez-nous</div>
-          <div className={cn("paragraph-x-large", styles.subtitle)}>
-            Nous sommes là pour vous aider. Pour toute question, suggestion ou
-            information sur nos services.
-          </div>
-        </div>
-        <br></br>
         {/* Map Section */}
-        {/* <div className={styles.block}>
-            <div className={cn("paragraph-medium", styles.text)}>Localisation</div>
+        <div className={styles.block}>
+            {/* <div className={cn("paragraph-medium", styles.text)}>Localisation</div> */}
             <div className={styles.map_container}>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18505.577216381913!2d-5.84861160900798!3d35.76265329108459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b870058e19eed%3A0xa292fd57b3b79595!2sEspace%20Ezzohour!5e0!3m2!1sfr!2sma!4v1761566922627!5m2!1sfr!2sma"
@@ -29,7 +21,7 @@ export default function Hero() {
                 title="Carte de localisation Espace Ezzohour"
               ></iframe>
             </div>
-          </div> */}
+          </div>
       </div>
     </div>
   );

@@ -1563,6 +1563,7 @@ const serviceIntroData = {
       "Nous proposons de l'essence et du gasoil Afriquia, reconnus pour leur qualité et leur performance, ainsi qu'une sélection Afriquia Lubrifiants pour accompagner l'entretien de votre véhicule. L'équipe est professionnelle, le service est fluide, et les avantages d'Afriquia sont là pour simplifier vos trajets à Tanger et partout au Maroc.",
     ],
     buttonText: "Notre Histoire",
+    buttonLink:"/contact-us"
   },
   restaurant: {
     icon: {
@@ -1583,6 +1584,7 @@ const serviceIntroData = {
       "Nous proposons une sélection variée de plats, de boissons et d'encas préparés avec soin et servis avec le sourire. Notre espace confortable et notre service fluide font de chaque visite un moment agréable, simple et savoureux.",
     ],
     buttonText: "Découvrir le Menu",
+    buttonLink:"/contact-us"
   },
   superette: {
     icon: {
@@ -1603,6 +1605,7 @@ const serviceIntroData = {
       "Vous y trouverez des produits alimentaires, des boissons, des articles d’hygiène, des snacks et bien plus encore le tout dans un espace propre, organisé et agréable. Que ce soit pour un complément de courses, un achat de dernière minute ou une pause gourmande, notre supérette répond à vos besoins avec simplicité et efficacité.",
     ],
     buttonText: "Voir les Produits",
+    buttonLink:"/contact-us"
   },
   lavage: {
     icon: {
@@ -1623,6 +1626,7 @@ const serviceIntroData = {
       "Que ce soit entre deux courses, après une pause café ou sur le chemin du travail, nous prenons soin de votre véhicule avec rigueur et efficacité. L’espace est accessible, le service est fluide, et le parking gratuit facilite chaque visite.",
     ],
     buttonText: "Nos Formules",
+    buttonLink:"/contact-us"
   },
   garage: {
     icon: {
@@ -1643,6 +1647,7 @@ const serviceIntroData = {
       "Révision, vidange, diagnostic, réparation, climatisation, pneus… Notre équipe qualifiée vous accompagne avec rigueur, grâce à des équipements adaptés pour un service rapide, fiable et complet.",
     ],
     buttonText: "Nos Services",
+    buttonLink:"/contact-us"
   },
   jeux: {
     icon: {
@@ -1663,6 +1668,7 @@ const serviceIntroData = {
       "Pendant qu’ils explorent, sautent et rient, vous profitez d’une pause café bien méritée au restaurant, avec une vue directe sur l’aire de jeux. Tout est pensé pour que petits et grands passent un bon moment, dans un environnement convivial, pratique et rassurant.",
     ],
     buttonText: "Découvrir l'Espace",
+    buttonLink:"/contact-us"
   },
   parking: {
     icon: {
@@ -1683,6 +1689,7 @@ const serviceIntroData = {
       "Pendant qu’ils explorent, sautent et rient, vous profitez d’une pause café bien méritée au restaurant, avec une vue directe sur l’aire de jeux. Tout est pensé pour que petits et grands passent un bon moment, dans un environnement convivial, pratique et rassurant.",
     ],
     buttonText: "Plan du Parking",
+    buttonLink:"/contact-us"
   },
 };
 
