@@ -283,7 +283,7 @@
 .mobile_menu_content {
   padding: 24px;
   height: 100%;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   background: var(--white);
 }
