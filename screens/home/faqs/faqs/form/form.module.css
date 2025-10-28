@@ -8,3 +8,65 @@
 .button:hover {
   border: 1.5px solid var(--white);
 }
+
+/* Modal Styles */
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+
+.successMessage {
+  color: green;
+  margin-bottom: 15px;
+}
+
+.Message {
+  color: #2c2c2c;
+  margin-bottom: 15px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.errorMessage {
+  color: red;
+  margin-bottom: 15px;
+}
+
+
+/* Modal Styles */
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 500px;
+}
+
+.successMessage {
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 15px;
+}
+
+.errorMessage {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.Message {
+  color: black;
+  margin-bottom: 30px;
+  line-height: 25px;
+  text-align: center;
+
+}
+
+/* .modalButton {
+  Add any specific button styling here if needed
+} */
