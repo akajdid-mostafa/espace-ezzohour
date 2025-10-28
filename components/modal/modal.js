@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import cn from "classnames";
 import styles from "./modal.module.css";
 import OutsideClickHandler from "react-outside-click-handler";
@@ -13,7 +13,15 @@ export default function Modal({
   className,
   outerClassName,
 }) {
-  React.useEffect(() => {
+  const ref = useRef(null);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    ref.current = document.body;
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
     if (visible) {
       document.body.classList.add(styles.no_scroll);
     } else {
@@ -25,16 +33,16 @@ export default function Modal({
     };
   }, [visible]);
 
-  return createPortal(
-    visible && (
-      <div className={cn(styles.modal, className)}>
-        <div className={cn(styles.outer, outerClassName)}>
-          <OutsideClickHandler onOutsideClick={onClose}>
-            {children}
-          </OutsideClickHandler>
-        </div>
-      </div>
-    ),
-    document.body
-  );
+  return mounted && ref.current && visible
+    ? createPortal(
+        <div className={cn(styles.modal, className)}>
+          <div className={cn(styles.outer, outerClassName)}>
+            <OutsideClickHandler onOutsideClick={onClose}>
+              {children}
+            </OutsideClickHandler>
+          </div>
+        </div>,
+        ref.current
+      )
+    : null;
 }
