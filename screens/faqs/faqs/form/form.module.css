@@ -8,3 +8,27 @@
 .button:hover {
   border: 1.5px solid var(--white);
 }
+
+
+.success_message {
+  color: green;
+  background-color: #f0fff0;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #d4edda;
+}
+
+.error_message {
+  color: red;
+  background-color: #fff0f0;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #f5c6cb;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

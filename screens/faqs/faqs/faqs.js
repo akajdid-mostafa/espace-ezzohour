@@ -52,7 +52,7 @@ export default function Faqs({ extended_faqs = mock.extended_faqs }) {
                 Didn’t find your answer?
               </div>
               <div className={cn("paragraph-medium", styles.span)}>
-                Don't hesitate to contact us
+                Don&apos;t hesitate to contact us
               </div>
 
               <Avatars className={styles.avatar} />
