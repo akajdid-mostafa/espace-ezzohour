@@ -2,6 +2,7 @@ import React from "react";
 import cn from "classnames";
 import styles from "./about.module.css";
 import icons from "@/constants/icons";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -22,10 +23,14 @@ export default function About() {
               utiles.
             </div>
           </div>
+          <Link href="/contact-us" className={cn("button-stroke", styles.button)}>
 
-          <button className={cn("button-stroke", styles.button)}>
-          Explorez Ezzohour {icons.ArrowRight}
-          </button>
+          Contactez-nous {icons.ArrowRight}
+          </Link>
+
+          {/* <button className={cn("button-stroke", styles.button)}>
+          Contactez-nous {icons.ArrowRight}
+          </button> */}
         </div>
       </div>
     </div>

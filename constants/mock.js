@@ -1154,7 +1154,7 @@ const cards = [
 const slides = [
   {
     id: 0,
-    image: "/images/sliders/1.jpg",
+    image: "/images/sliders/espace-ezzohour.webp",
     title: "Espace Ezzohour",
     subtitle:
       "Votre destination quotidienne à Tanger : tous vos services, réunis en un seul lieu",
@@ -1163,7 +1163,7 @@ const slides = [
   },
   {
     id: 1,
-    image: "/images/sliders/2.jpg",
+    image: "/images/sliders/station-carburant.webp",
     title: "Station Carburant",
     subtitle:
       "Faites le plein avec Afriquia, 7j/7. Qualité, rapidité, fiabilité.",
@@ -1172,7 +1172,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "/images/sliders/3.jpg",
+    image: "/images/sliders/restauration&pause.webp",
     title: "Restauration & Pause",
     subtitle:
       "Pour vos repas et pauses gourmandes, à tout moment de la journée.",
@@ -1189,7 +1189,7 @@ const slides = [
   // },
   {
     id: 4,
-    image: "/images/sliders/5.jpg",
+    image: "/images/sliders/lavage-auto.webp",
     title: "Lavage sur Place",
     subtitle: "Service lavage pendant que vous profitez du complexe.",
     button: "Options lavage",
@@ -1197,7 +1197,7 @@ const slides = [
   },
   {
     id: 5,
-    image: "/images/sliders/6.jpg",
+    image: "/images/sliders/services-mecaniques.webp",
     title: "Services Mécaniques",
     subtitle:
       "Vidange, pneus, maintenance rapide et fiable pour votre véhicule.",
@@ -1206,7 +1206,7 @@ const slides = [
   },
   {
     id: 6,
-    image: "/images/sliders/7.jpg",
+    image: "/images/sliders/espace-enfants.webp",
     title: "Espace Enfants",
     subtitle: "Un espace sécurisé et gratuit pour le plaisir des plus petits.",
     button: "Voir les Activités",
@@ -1214,7 +1214,7 @@ const slides = [
   },
   {
     id: 7,
-    image: "/images/sliders/8.jpg",
+    image: "/images/sliders/parking.webp",
     title: "Parking gratuit",
     subtitle: "Parking spacieux, sécurisé et gratuit pour tous nos visiteurs.",
     button: "Trouver une Place",
@@ -1509,37 +1509,37 @@ const serviceHeroData = {
   station: {
     subtitle: "Carburant fiable",
     title: "Carburant premium garanti 24/24",
-    backgroundImage: "/images/sliders/2.jpg",
+    backgroundImage: "/images/sliders/station-carburant.webp",
   },
   restaurant: {
     subtitle: "Cuisine du quotidien",
     title: "Pause gourmande à tout moment",
-    backgroundImage: "/images/sliders/3.jpg",
+    backgroundImage: "/images/sliders/restauration&pause.webp",
   },
-  superette: {
-    subtitle: "Courses essentielles",
-    title: "Produits du quotidien en tout moment",
-    backgroundImage: "/images/sliders/4.jpg",
-  },
+  // superette: {
+  //   subtitle: "Courses essentielles",
+  //   title: "Produits du quotidien en tout moment",
+  //   backgroundImage: "/images/sliders/4.jpg",
+  // },
   lavage: {
     subtitle: "Brillance express",
     title: "Lavage auto complet et rapide",
-    backgroundImage: "/images/sliders/5.jpg",
+    backgroundImage: "/images/espace/lavage-auto-hero.webp",
   },
   garage: {
     subtitle: "Entretien automobile",
     title: "Réparations fiable pour toutes véhicules",
-    backgroundImage: "/images/sliders/6.jpg",
+    backgroundImage: "/images/sliders/services-mecaniques.webp",
   },
   jeux: {
     subtitle: "Jeux sans limite",
     title: "Espace 100 % fun pour les enfants",
-    backgroundImage: "/images/sliders/7.jpg",
+    backgroundImage: "/images/sliders/espace-enfants.webp",
   },
   parking: {
     subtitle: "Parking gratuit",
     title: "Stationnement toujours accessible 24/24",
-    backgroundImage: "/images/sliders/8.jpg",
+    backgroundImage: "/images/sliders/parking.webp",
   },
 };
 
@@ -1552,7 +1552,7 @@ const serviceIntroData = {
       height: 48,
     },
     image: {
-      src: "/images/sliders/2.jpg",
+      src: "/images/sliders/station-carburant.webp",
       alt: "Station Carburant",
       width: 600,
       height: 400,
@@ -1573,7 +1573,7 @@ const serviceIntroData = {
       height: 48,
     },
     image: {
-      src: "/images/sliders/3.jpg",
+      src: "/images/espace/cafe-restaurant.webp",
       alt: "Restaurant",
       width: 600,
       height: 400,
@@ -1586,27 +1586,27 @@ const serviceIntroData = {
     buttonText: "Découvrir le Menu",
     buttonLink:"/contact-us"
   },
-  superette: {
-    icon: {
-      src: "/images/espace/supette-icon.svg",
-      alt: "Superette Icon",
-      width: 48,
-      height: 48,
-    },
-    image: {
-      src: "/images/sliders/supette.png",
-      alt: "Superette",
-      width: 600,
-      height: 400,
-    },
-    title: "Fraîcheur quotidienne à chaque instant",
-    descriptions: [
-      "La supérette Ezzohour vous accueille tous les jours avec une offre variée de produits du quotidien, pensée pour les familles, les professionnels et les voyageurs de passage. Située au cœur du complexe, elle facilite vos courses rapides grâce à un accès facile, un parking gratuit et un service fluide.",
-      "Vous y trouverez des produits alimentaires, des boissons, des articles d’hygiène, des snacks et bien plus encore le tout dans un espace propre, organisé et agréable. Que ce soit pour un complément de courses, un achat de dernière minute ou une pause gourmande, notre supérette répond à vos besoins avec simplicité et efficacité.",
-    ],
-    buttonText: "Voir les Produits",
-    buttonLink:"/contact-us"
-  },
+  // superette: {
+  //   icon: {
+  //     src: "/images/espace/supette-icon.svg",
+  //     alt: "Superette Icon",
+  //     width: 48,
+  //     height: 48,
+  //   },
+  //   image: {
+  //     src: "/images/sliders/supette.png",
+  //     alt: "Superette",
+  //     width: 600,
+  //     height: 400,
+  //   },
+  //   title: "Fraîcheur quotidienne à chaque instant",
+  //   descriptions: [
+  //     "La supérette Ezzohour vous accueille tous les jours avec une offre variée de produits du quotidien, pensée pour les familles, les professionnels et les voyageurs de passage. Située au cœur du complexe, elle facilite vos courses rapides grâce à un accès facile, un parking gratuit et un service fluide.",
+  //     "Vous y trouverez des produits alimentaires, des boissons, des articles d’hygiène, des snacks et bien plus encore le tout dans un espace propre, organisé et agréable. Que ce soit pour un complément de courses, un achat de dernière minute ou une pause gourmande, notre supérette répond à vos besoins avec simplicité et efficacité.",
+  //   ],
+  //   buttonText: "Voir les Produits",
+  //   buttonLink:"/contact-us"
+  // },
   lavage: {
     icon: {
       src: "/images/espace/lavage-auto-icon.svg",
@@ -1615,7 +1615,7 @@ const serviceIntroData = {
       height: 48,
     },
     image: {
-      src: "/images/sliders/lavage-auto.png",
+      src: "/images/sliders/lavage-auto.webp",
       alt: "Lavage Auto",
       width: 600,
       height: 400,
@@ -1636,7 +1636,7 @@ const serviceIntroData = {
       height: 48,
     },
     image: {
-      src: "/images/sliders/6.jpg",
+      src: "/images/sliders/services-mecaniques-hero.webp",
       alt: "Garage",
       width: 600,
       height: 400,
@@ -1657,7 +1657,7 @@ const serviceIntroData = {
       height: 48,
     },
     image: {
-      src: "/images/sliders/7.jpg",
+      src: "/images/sliders/espace-enfantss.webp",
       alt: "Espace Jeux",
       width: 600,
       height: 400,
@@ -1678,7 +1678,7 @@ const serviceIntroData = {
       height: 48,
     },
     image: {
-      src: "/images/sliders/8.jpg",
+      src: "/images/sliders/parking.webp",
       alt: "Parking",
       width: 600,
       height: 400,

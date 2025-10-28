@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function ResponsiveDesign({
   image = {
-    src: "/images/espace/station-carburant.svg",
+    src: "/images/espace/station-carburant.webp",
     alt: "Station Carburant",
     width: 500,
     height: 400

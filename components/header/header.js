@@ -85,7 +85,7 @@ export default function Header({ header_links = mock.header_links }) {
         <div className={cn("container", styles.container)}>
           <Link href="/" className={styles.logo}>
             <Image 
-              src="/images/logo/logo.svg" 
+              src="/images/logo/espace-ezzohour-logo.svg" 
               alt="Ezzohour Logo" 
               width={170} 
               height={100}
@@ -149,7 +149,7 @@ export default function Header({ header_links = mock.header_links }) {
         <div className={styles.mobile_menu_content}>
           <div className={styles.mobile_menu_header}>
             <Image 
-              src="/images/logo/logo.svg" 
+              src="/images/logo/espace-ezzohour-logo.svg" 
               alt="Espace Ezzohour Logo" 
               width={120} 
               height={60}

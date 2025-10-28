@@ -2,10 +2,19 @@ import React from "react";
 import cn from "classnames";
 import styles from "./news.module.css";
 import icons from "@/constants/icons";
-import { BlogPost, FeaturedPost } from "@/components/blog-posts";
-import mock from "@/constants/mock";
+import Image from "next/image";
 
-export default function News({ blog_posts = mock.blog_posts }) {
+export default function News() {
+  // Exemple d'images (tu peux remplacer par tes vraies images)
+  const images = [
+    "/images/gallery/1.webp",
+    "/images/gallery/2.webp",
+    "/images/gallery/3.webp",
+    "/images/gallery/4.webp",
+    "/images/gallery/5.webp",
+    "/images/gallery/6.webp",
+  ];
+
   return (
     <div className={cn("section")}>
       <div className={cn("container")}>
@@ -16,45 +25,20 @@ export default function News({ blog_posts = mock.blog_posts }) {
           </button>
         </div>
 
+        {/* SECTION IMAGES */}
         <div className={styles.news}>
-          <div className={styles.col}>
-            <div className={styles.card}>
-              <img src="/images/gallery/3.jpg" className={styles.image} />
+          {images.map((src, index) => (
+            <div key={index} className={styles.card}>
+              <Image
+                src={src}
+                alt={`Gallery ${index + 1}`}
+                className={styles.image}
+                width={500}      
+                height={350}     
+                quality={90}   
+              />
             </div>
-          </div>
-          <div className={styles.col}>
-            <div
-              className={styles.card1}
-              style={{
-                backgroundImage: "url(/images/gallery/8.jpg)",
-              }}
-            ></div>
-          </div>
-          <div className={styles.col}>
-            <div className={styles.card}>
-              <img src="/images/gallery/12.jpg" className={styles.image} />
-            </div>
-          </div>
-        </div>
-        <div className={styles.news}>
-          <div className={styles.col}>
-            <div className={styles.card}>
-              <img src="/images/gallery/4.jpg" className={styles.image} />
-            </div>
-          </div>
-          <div className={styles.col}>
-            <div
-              className={styles.card1}
-              style={{
-                backgroundImage: "url(/images/gallery/5.jpg)",
-              }}
-            ></div>
-          </div>
-          <div className={styles.col}>
-            <div className={styles.card}>
-              <img src="/images/gallery/6.jpg" className={styles.image} />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

@@ -34,7 +34,7 @@ export default function HomePage({ products = mock.products }) {
       {/* Example 2: Custom content for mobile experience */}
       <ResponsiveDesign
         image={{
-          src: "/images/espace/cafe-restaurant.svg",
+          src: "/images/espace/cafe-restaurant.webp",
           alt: "Café Restaurant",
           width: 500,
           height: 400
@@ -73,7 +73,7 @@ export default function HomePage({ products = mock.products }) {
       {/* Example 4: Custom content for restaurant */}
       <ResponsiveDesign
         image={{
-          src: "/images/espace/lavage-auto.png",
+          src: "/images/espace/lavage-auto.webp",
           alt: "Lavage Auto",
           width: 500,
           height: 400
@@ -86,13 +86,13 @@ export default function HomePage({ products = mock.products }) {
         }}
         title="Lavage Auto"
         subtitle="Facilitez-vous la vie avec le lavage auto professionnel dans le complexe : nettoyage manuel, automatique ou libre-service pendant votre pause."
-        reverse={true}
+        // reverse={true}
         href="/lavage-auto"
       />
       {/* Example 5: Custom content for fuel station */}
       <ResponsiveDesign
         image={{
-          src: "/images/espace/garage-maintenance.png",
+          src: "/images/espace/garage-maintenance.webp",
           alt: "Garage maintenance",
           width: 500,
           height: 400
@@ -104,15 +104,15 @@ export default function HomePage({ products = mock.products }) {
           height: 44
         }}
         title="Garage maintenance"
-        subtitle="Le garage Espaces Ezzohour prend soin de votre voiture avec entretien complet, vidange, pneus et techniciens qualifiés à proximité directe de tous nos services.
-"
+        subtitle="Le garage Espaces Ezzohour prend soin de votre voiture avec entretien complet, vidange, pneus et techniciens qualifiés à proximité directe de tous nos services."
+        reverse={true}
         href="/garage-maintenance"
       />
 
             {/* Example 6: Custom content for restaurant */}
             <ResponsiveDesign
         image={{
-          src: "/images/espace/espace-jeux.png",
+          src: "/images/espace/espace-jeux.webp",
           alt: "Espace Jeux",
           width: 500,
           height: 400
@@ -125,14 +125,14 @@ export default function HomePage({ products = mock.products }) {
         }}
         title="Espace Jeux"
         subtitle="Vos enfants peuvent profiter d’un espace jeux sécurisé et gratuit, tout près des autres services, pour une visite en toute tranquillité chez Espaces Ezzohour."
-        reverse={true}
+        // reverse={true}
         href="/espace-jeux"
       />
 
        {/* Example 7: Custom content for fuel station */}
        <ResponsiveDesign
         image={{
-          src: "/images/espace/parking.png",
+          src: "/images/espace/parking.webp",
           alt: "Parking",
           width: 500,
           height: 400
@@ -145,6 +145,7 @@ export default function HomePage({ products = mock.products }) {
         }}
         title="Parking"
         subtitle="Que vous visitiez Espaces Ezzohour ou soyez simplement de passage, notre parking gratuit et sécurisé accueille tous les véhicules pour un arrêt facile et serein."
+        reverse={true}
         href="/parking"
       />
 

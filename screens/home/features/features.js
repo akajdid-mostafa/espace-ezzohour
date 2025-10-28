@@ -7,25 +7,25 @@ import Feature from "@/components/feature";
 const features = [
   {
     id: 1,
-    image: "/images/sliders/2.jpg",
+    image: "/images/sliders/station-carburant.webp",
     title: "Pause Gourmande",
     subtitle: "Régalez-vous sur place",
   },
   {
     id: 2,
-    image: "/images/sliders/3.jpg",
+    image: "/images/sliders/restauration&pause.webp",
     title: "Service Auto",
     subtitle: "Votre voiture impeccable",
   },
   {
     id: 3,
-    image: "/images/sliders/6.jpg",
+    image: "/images/sliders/services-mecaniques.webp",
     title: "Espace Enfants",
     subtitle: "Leur bonheur, votre pause",
   },
   {
     id: 4,
-    image: "/images/sliders/supette.png",
+    image: "/images/sliders/espace-enfantss.webp",
     title: "Courses Express",
     subtitle: "L'essentiel à portée de main",
   },
