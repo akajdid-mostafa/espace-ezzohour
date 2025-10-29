@@ -57,7 +57,7 @@ export default function ContactForm({ options = mock.options }) {
   };
 
   return (
-    <div >
+    <div>
       <div className={cn("container", styles.container)}>
         <div className={styles.col}>
           <form className={styles.form} onSubmit={handleSubmit}>
@@ -133,14 +133,16 @@ export default function ContactForm({ options = mock.options }) {
             </a>{" "}
             de Google s&apos;appliquent.
           </div>
-          
         </div>
         <div className={styles.side_content}>
-          
-
           <div className={styles.block}>
             <div className={cn("paragraph-medium", styles.text)}>Adresse</div>
-            <a className={cn("label-medium", styles.link)}>
+            <a
+              href="https://maps.app.goo.gl/Bjw27CxXkDR52Yow9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn("label-medium", styles.link)}
+            >
               Espace Ezzohour, Tanger, Maroc
             </a>
           </div>
@@ -177,9 +179,7 @@ export default function ContactForm({ options = mock.options }) {
             </div>
             <Socials />
           </div>
-          
         </div>
-        
       </div>
     </div>
   );
