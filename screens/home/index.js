@@ -3,7 +3,6 @@ import Hero from "./hero";
 import About from "./about";
 import Categories from "./categories";
 import Intro from "./intro";
-// import ProductView from "../../components/product-view";
 import Compare from "./compare";
 import Marquee from "@/components/marquee";
 // import Sales from "./sales";
@@ -150,7 +149,6 @@ export default function HomePage({ products = mock.products }) {
       />
 
       {/* <Categories /> */}
-      {/* <ProductView {...product} /> */}
       {/* <Compare /> */}
       <Faqs />
       <Marquee />
