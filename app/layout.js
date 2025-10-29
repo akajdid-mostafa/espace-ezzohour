@@ -69,6 +69,25 @@ export default function RootLayout({ children }) {
         <meta property="og:site_name" content="Espace Ezzohour" />
         <meta property="og:locale" content="fr_MA" />
         <link rel="manifest" href="/manifest.json" />
+        <link
+          rel="preload"
+          href="/images/sliders/espace-ezzohour.webp"
+          as="image"
+          type="image/webp"
+          fetchpriority="high"
+        />
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+    /* Add critical CSS here */
+    .slide_backgroundImage__RKQVO {
+      background-size: cover;
+      background-position: center;
+      /* Other critical styles */
+    }
+  `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -106,14 +125,14 @@ export default function RootLayout({ children }) {
               sameAs: [
                 "https://www.facebook.com/profile.php?id=61581691160238",
                 "https://www.instagram.com/espace.ezzohour/",
-                "https://www.tiktok.com/@espace.ezzohour?_t=ZS-90nIVncyHhv&_r=1"
+                "https://www.tiktok.com/@espace.ezzohour?_t=ZS-90nIVncyHhv&_r=1",
               ],
             }),
           }}
-        />        
+        />
       </head>
       <body className={cn(inter.variable, dmSans.variable)}>
-      <Script
+        <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-1GCJ448N4Y"
         />

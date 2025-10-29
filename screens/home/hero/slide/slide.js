@@ -35,6 +35,10 @@ export default function Slide({
         className={styles.backgroundImage}
         style={{
           backgroundImage: `url(${slides[active].image})`,
+          ...(active === 0 && {
+            "data-fetchpriority": "high",
+            loading: "eager",
+          }),
         }}
       >
         <div className={styles.overlay}>
@@ -67,7 +71,7 @@ export default function Slide({
               <Indicators
                 indicators={slides}
                 active={active}
-                setActive={setActive} // Use the prop that was passed
+                setActive={setActive}
                 color={"var(--white)"}
               />
 
